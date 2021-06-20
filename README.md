@@ -48,6 +48,10 @@ AMPLIFIED_REGIONS - the amount of amplified regions (5)
 - taxonomy_smurf2.txt - A table of species' relative abundances (rows), in case of undocumented bacteria, the output will be the closest one in the database. 
 - SMURF2_results.mat - A matlab file contains the ids of the amplified bacteria. 
 
+## Taxonomy
+In order to run the taxonomy, add the argument --matlab MATLAB_RUNTIME_PATH
+MATLAB_RUNTIME_PATH - the full path to the directory where version 9.7 of the MATLAB Runtime is installed on the machine.
+
 ## Example
 The directory "example_fastq" contains 5R sequencing files of in silico mixture. To perform SMURF2 reconstruction of these samples use the following command:
 
