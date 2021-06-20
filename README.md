@@ -44,7 +44,7 @@ AMPLIFIED_REGIONS - the amount of amplified regions (5)
 - new_bacteria_*.fasta - Fasta files with the undocumented bacteria found by SMURF2 (file per amplified region).
 - SMURF2_results.csv - A table with the abundance and the full sequences of the reconstructed bacteria.
 - 
-# optional:
+### optional:
 - taxonomy_smurf2.txt - A table of species' relative abundances (rows), in case of undocumented bacteria, the output will be the closest one in the database. 
 - SMURF2_results.mat - A matlab file contains the ids of the amplified bacteria. 
 
