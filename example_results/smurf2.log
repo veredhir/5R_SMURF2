@@ -1,0 +1,980 @@
+2021-06-27 10:27:53,474 INFO timed() [9] - Entered 'execute'
+2021-06-27 10:27:53,477 INFO __init__() [176] - min_coverage_for_split = 0.01, max_priors_diff_for_stability_test = 0.005, min_initial_frequency = 0.005
+2021-06-27 10:27:53,478 INFO __init__() [408] - Current process memory = 0.068685824G
+2021-06-27 10:27:53,478 INFO timed() [9] - Entered 'init_pre_process'
+2021-06-27 10:27:53,478 INFO init_pre_process() [444] - ITERATION 0
+2021-06-27 10:27:53,478 INFO init_pre_process() [445] - number of regions = 5
+2021-06-27 10:27:53,511 INFO init() [55] - Primers were update with 5 regions, min primer size = 18
+2021-06-27 10:27:54,091 INFO calc_read_length() [912] - Set read length to 126
+2021-06-27 10:27:54,091 INFO timed() [9] - Entered 'prepare_reads'
+2021-06-27 10:27:54,091 INFO prepare_reads() [917] - Start processing: fastq path = /home/veredhi/smurf2_github/example_fastq/mockReads1.fq, reverse reads fastq path = /home/veredhi/smurf2_github/example_fastq/mockReads2.fq
+2021-06-27 10:27:54,939 INFO prepare_reads() [953] - Reads with matched region found = 840 out of 840 reads, short_reads=0
+2021-06-27 10:27:55,123 INFO prepare_reads() [978] - Dropped 0/840 reads (too low frequency). # of reads groups = 337
+2021-06-27 10:27:55,124 INFO timed() [17] - Done prepare_reads: 1.03 sec
+
+2021-06-27 10:27:55,125 INFO update_primers_using_histogram() [97] - Region 1: # of new primers = 1, # of old primers = 3
+2021-06-27 10:27:55,125 INFO update_primers_using_histogram() [97] - Region 2: # of new primers = 1, # of old primers = 2
+2021-06-27 10:27:55,125 INFO update_primers_using_histogram() [97] - Region 3: # of new primers = 1, # of old primers = 4
+2021-06-27 10:27:55,125 INFO update_primers_using_histogram() [97] - Region 4: # of new primers = 1, # of old primers = 3
+2021-06-27 10:27:55,125 INFO update_primers_using_histogram() [97] - Region 5: # of new primers = 1, # of old primers = 2
+2021-06-27 10:27:55,137 INFO timed() [9] - Entered 'save_initial_references_DB'
+2021-06-27 10:28:48,826 INFO timed() [17] - Done save_initial_references_DB: 53.69 sec
+
+2021-06-27 10:28:48,826 INFO timed() [9] - Entered 'find_mapping'
+2021-06-27 10:28:48,827 INFO find_mapping() [682] - Current process memory = 0.07655424G
+2021-06-27 10:29:24,703 INFO find_mapping() [702] - Current process memory = 2.713423872G
+2021-06-27 10:29:27,562 INFO find_mapping() [714] - # References in region = 1181229, Unique k-mer in region:= 273119
+2021-06-27 10:29:28,754 INFO find_mapping() [724] - Similar reads groups =10 [# reads = 72], overall reads groups = 58
+2021-06-27 10:29:29,279 INFO find_mapping() [741] - Mapping for region = 1, reads size = 48, ref size = 273119,  amount of chunks = 90, cores=16, free memory = 0.453300224G
+2021-06-27 10:29:51,015 INFO find_mapping() [762] - Found mapping for region = 1
+2021-06-27 10:29:51,016 INFO find_mapping() [702] - Current process memory = 2.910429184G
+2021-06-27 10:29:53,828 INFO find_mapping() [714] - # References in region = 1334832, Unique k-mer in region:= 232325
+2021-06-27 10:29:54,685 INFO find_mapping() [724] - Similar reads groups =12 [# reads = 141], overall reads groups = 71
+2021-06-27 10:29:55,149 INFO find_mapping() [741] - Mapping for region = 2, reads size = 59, ref size = 232325,  amount of chunks = 30, cores=16, free memory = 1.661927424G
+2021-06-27 10:30:02,899 INFO find_mapping() [762] - Found mapping for region = 2
+2021-06-27 10:30:02,900 INFO find_mapping() [702] - Current process memory = 2.961944576G
+2021-06-27 10:30:08,944 INFO find_mapping() [714] - # References in region = 1285094, Unique k-mer in region:= 308317
+2021-06-27 10:30:13,613 INFO find_mapping() [724] - Similar reads groups =14 [# reads = 135], overall reads groups = 79
+2021-06-27 10:30:14,211 INFO find_mapping() [741] - Mapping for region = 3, reads size = 65, ref size = 308317,  amount of chunks = 15, cores=16, free memory = 4.740571136G
+2021-06-27 10:30:24,205 INFO find_mapping() [762] - Found mapping for region = 3
+2021-06-27 10:30:24,206 INFO find_mapping() [702] - Current process memory = 2.948190208G
+2021-06-27 10:30:26,023 INFO find_mapping() [714] - # References in region = 1052621, Unique k-mer in region:= 156379
+2021-06-27 10:30:26,552 INFO find_mapping() [724] - Similar reads groups =3 [# reads = 71], overall reads groups = 52
+2021-06-27 10:30:26,889 INFO find_mapping() [741] - Mapping for region = 4, reads size = 49, ref size = 156379,  amount of chunks = 5, cores=16, free memory = 8.826683392G
+2021-06-27 10:30:30,705 INFO find_mapping() [762] - Found mapping for region = 4
+2021-06-27 10:30:30,706 INFO find_mapping() [702] - Current process memory = 2.920337408G
+2021-06-27 10:30:34,667 INFO find_mapping() [714] - # References in region = 1193799, Unique k-mer in region:= 232820
+2021-06-27 10:30:37,091 INFO find_mapping() [724] - Similar reads groups =4 [# reads = 83], overall reads groups = 77
+2021-06-27 10:30:37,572 INFO find_mapping() [741] - Mapping for region = 5, reads size = 73, ref size = 232820,  amount of chunks = 10, cores=16, free memory = 8.813678592G
+2021-06-27 10:30:44,207 INFO find_mapping() [762] - Found mapping for region = 5
+2021-06-27 10:30:44,259 INFO find_mapping() [772] - min_mapped_reads_for_k-mer = 0, mapping size before filter = 252269
+2021-06-27 10:30:44,265 INFO find_mapping() [775] - Mapped reads before filter = 840
+2021-06-27 10:30:44,305 INFO find_mapping() [781] - Before filter low frequency regions: # Bacteria = 15483, # Bacteria k-mer = 23180
+2021-06-27 10:30:44,311 INFO find_mapping() [786] - min_mapped_reads_for_region = 0, mapping size after filter = 252269
+2021-06-27 10:30:44,324 INFO find_mapping() [789] - After filter low frequency regions: # Bacteria = 15483, # Bacteria k-mer = 23180
+2021-06-27 10:30:44,329 INFO find_mapping() [792] - Mapped reads after filter = 840
+2021-06-27 10:30:44,331 INFO timed() [9] - Entered 'filter_similar_mapped_reference'
+2021-06-27 10:30:44,331 INFO filter_similar_mapped_reference() [805] - Mapping size = 252269
+2021-06-27 10:30:56,769 INFO filter_similar_mapped_reference() [835] - UNIQUE REFERENCES: before = 15483, after = 236
+2021-06-27 10:30:59,720 INFO filter_similar_mapped_reference() [856] - UNIQUE REFERENCES after remove subsets: before = 15483, after = 139
+2021-06-27 10:30:59,750 INFO filter_similar_mapped_reference() [865] - Mapping size = 2199
+2021-06-27 10:30:59,752 INFO filter_similar_mapped_reference() [867] - Current mapped reads: 840
+2021-06-27 10:30:59,758 INFO timed() [17] - Done filter_similar_mapped_reference: 15.43 sec
+
+2021-06-27 10:31:00,960 INFO timed() [15] - Done find_mapping: 2.20 minutes
+
+2021-06-27 10:31:00,961 INFO timed() [9] - Entered 'update_reference_db_with_weight'
+2021-06-27 10:31:57,515 INFO timed() [17] - Done update_reference_db_with_weight: 56.55 sec
+
+2021-06-27 10:31:57,515 INFO timed() [9] - Entered 'calc_initial_priors'
+2021-06-27 10:31:57,523 INFO timed() [9] - Entered 'get_mapped_references'
+2021-06-27 10:32:19,638 INFO get_mapped_references() [588] - Mapped references: 139/1370870
+2021-06-27 10:32:19,876 INFO timed() [17] - Done get_mapped_references: 22.35 sec
+
+2021-06-27 10:32:19,929 INFO timed() [17] - Done calc_initial_priors: 22.41 sec
+
+2021-06-27 10:32:19,930 INFO timed() [15] - Done init_pre_process: 4.44 minutes
+
+2021-06-27 10:32:19,930 INFO __init__() [422] - Current process memory = 0.390582272G
+2021-06-27 10:32:19,930 INFO timed() [9] - Entered 'do_iteration'
+2021-06-27 10:32:19,930 INFO timed() [9] - Entered 'calc_prob_n'
+2021-06-27 10:32:19,930 INFO calc_prob_n() [997] - Current process memory = 0.390582272G
+2021-06-27 10:32:19,930 INFO timed() [9] - Entered 'get_reads_seq_df'
+2021-06-27 10:32:21,287 INFO timed() [17] - Done get_reads_seq_df: 1.36 sec
+
+2021-06-27 10:32:21,292 INFO timed() [9] - Entered 'get_reads_df'
+2021-06-27 10:32:22,030 INFO timed() [17] - Done get_reads_df: 0.74 sec
+
+2021-06-27 10:32:22,030 INFO timed() [9] - Entered 'get_current_state_df'
+2021-06-27 10:32:23,264 INFO timed() [17] - Done get_current_state_df: 1.23 sec
+
+2021-06-27 10:32:23,264 INFO timed() [9] - Entered 'get_posteriors_df'
+2021-06-27 10:32:23,264 INFO timed() [17] - Done get_posteriors_df: 0.00 sec
+
+2021-06-27 10:32:23,264 INFO calc_prob_n() [1005] - length of dataframes: reads = 840, mapping = 2199, current_state_df = 314
+2021-06-27 10:32:23,437 INFO calc_prob_n() [1021] - Current process memory = 0.388595712G
+2021-06-27 10:32:23,622 INFO parallelize_calc_prob_n_for_single_ref() [1711] - Current process memory = 0.388595712G, Free memory = 11.3650688G, maximum processes = 14
+2021-06-27 10:32:23,624 INFO parallelize_calc_prob_n_for_single_ref() [1725] - Max rows in batch = 7739, cores = 14, max rows for single reference = 200
+2021-06-27 10:32:23,759 INFO parallelize_calc_prob_n_for_single_ref() [1765] - Max rows in chunk = 7739, amount of chunks = 1, pool size = 13
+2021-06-27 10:32:26,549 INFO parallelize_calc_prob_n_for_single_ref() [1770] - after pool
+2021-06-27 10:32:26,550 INFO parallelize_calc_prob_n_for_single_ref() [1774] - after concat mapping
+2021-06-27 10:32:26,623 INFO calc_prob_n() [1035] - Done parallelize_calc_prob_n_for_single_ref
+2021-06-27 10:32:27,112 INFO timed() [17] - Done calc_prob_n: 7.18 sec
+
+2021-06-27 10:32:27,112 INFO timed() [9] - Entered 'calc_posteriors'
+2021-06-27 10:32:27,112 INFO timed() [9] - Entered 'calc_likelihoods'
+2021-06-27 10:32:27,112 INFO timed() [9] - Entered 'get_reads_seq_df'
+2021-06-27 10:32:28,408 INFO timed() [17] - Done get_reads_seq_df: 1.30 sec
+
+2021-06-27 10:32:28,413 INFO timed() [9] - Entered 'get_reads_df'
+2021-06-27 10:32:29,163 INFO timed() [17] - Done get_reads_df: 0.75 sec
+
+2021-06-27 10:32:29,271 INFO calc_likelihoods() [1174] - Current process memory = 0.392732672G, Free memory = 11.351416832G, maximum processes = 14
+2021-06-27 10:32:29,271 INFO calc_likelihoods() [1180] - LIKELIHOOD: number of chunks = 5, mapping size = 2199, reads size = 840, merge length = 6671
+2021-06-27 10:32:31,976 INFO calc_likelihoods() [1193] - after pool
+2021-06-27 10:32:32,006 INFO calc_likelihoods() [1195] - after concat
+2021-06-27 10:32:32,118 INFO timed() [17] - Done calc_likelihoods: 5.01 sec
+
+2021-06-27 10:32:32,130 INFO calc_posteriors() [1227] - posteriors = 139 refs
+2021-06-27 10:32:32,137 INFO calc_posteriors() [1244] - zero_posteriors = 0 refs
+2021-06-27 10:32:32,140 INFO calc_posteriors() [1252] - non_zero_posteriors = 139 refs
+2021-06-27 10:32:32,143 INFO calc_posteriors() [1258] - posteriors = 139 refs
+2021-06-27 10:32:32,188 INFO timed() [17] - Done calc_posteriors: 5.08 sec
+
+2021-06-27 10:32:32,188 INFO timed() [9] - Entered 'calc_priors'
+2021-06-27 10:32:32,258 INFO timed() [17] - Done calc_priors: 0.07 sec
+
+2021-06-27 10:32:32,258 INFO timed() [9] - Entered 'update_bacteria_DB'
+2021-06-27 10:32:35,016 INFO update_bacteria_DB() [1420] - New bacteria DB size = 139, prev bacteria DB size = 139
+2021-06-27 10:32:35,027 INFO timed() [17] - Done update_bacteria_DB: 2.77 sec
+
+2021-06-27 10:32:35,027 INFO timed() [9] - Entered 'is_stable_state'
+2021-06-27 10:32:35,027 INFO timed() [17] - Done is_stable_state: 0.00 sec
+
+2021-06-27 10:32:35,032 INFO do_iteration() [1454] - Iteration 0: # reads 840
+2021-06-27 10:32:35,033 INFO timed() [17] - Done do_iteration: 15.10 sec
+
+2021-06-27 10:32:35,044 INFO execute() [102] - Create iteration 1 working dir = /home/veredhi/smurf2_github/tmp_res/iter.01
+2021-06-27 10:32:35,044 INFO __init__() [176] - min_coverage_for_split = 0.005, max_priors_diff_for_stability_test = 0.005, min_initial_frequency = 0.005
+2021-06-27 10:32:35,045 INFO __init__() [408] - Current process memory = 0.393220096G
+2021-06-27 10:32:35,045 INFO timed() [9] - Entered 'init'
+2021-06-27 10:32:35,045 INFO init() [481] - ITERATION 1
+2021-06-27 10:32:35,067 INFO init() [510] - Current state # references before filter = 139, after filter above threshold [0.0005] # = 108
+2021-06-27 10:32:35,148 INFO timed() [9] - Entered 'find_mapping'
+2021-06-27 10:32:35,148 INFO find_mapping() [682] - Current process memory = 0.393220096G
+2021-06-27 10:32:35,161 INFO find_mapping() [702] - Current process memory = 0.393220096G
+2021-06-27 10:32:35,167 INFO find_mapping() [714] - # References in region = 53, Unique k-mer in region:= 21
+2021-06-27 10:32:35,171 INFO find_mapping() [724] - Similar reads groups =21 [# reads = 83], overall reads groups = 58
+2021-06-27 10:32:35,175 INFO find_mapping() [741] - Mapping for region = 1, reads size = 37, ref size = 21,  amount of chunks = 5, cores=16, free memory = 11.3512448G
+2021-06-27 10:32:35,525 INFO find_mapping() [762] - Found mapping for region = 1
+2021-06-27 10:32:35,526 INFO find_mapping() [702] - Current process memory = 0.393220096G
+2021-06-27 10:32:35,533 INFO find_mapping() [714] - # References in region = 60, Unique k-mer in region:= 29
+2021-06-27 10:32:35,538 INFO find_mapping() [724] - Similar reads groups =29 [# reads = 158], overall reads groups = 71
+2021-06-27 10:32:35,542 INFO find_mapping() [741] - Mapping for region = 2, reads size = 42, ref size = 29,  amount of chunks = 5, cores=16, free memory = 11.345412096G
+2021-06-27 10:32:35,892 INFO find_mapping() [762] - Found mapping for region = 2
+2021-06-27 10:32:35,893 INFO find_mapping() [702] - Current process memory = 0.393220096G
+2021-06-27 10:32:35,902 INFO find_mapping() [714] - # References in region = 84, Unique k-mer in region:= 31
+2021-06-27 10:32:35,907 INFO find_mapping() [724] - Similar reads groups =31 [# reads = 152], overall reads groups = 79
+2021-06-27 10:32:35,910 INFO find_mapping() [741] - Mapping for region = 3, reads size = 48, ref size = 31,  amount of chunks = 5, cores=16, free memory = 11.344891904G
+2021-06-27 10:32:36,254 INFO find_mapping() [762] - Found mapping for region = 3
+2021-06-27 10:32:36,255 INFO find_mapping() [702] - Current process memory = 0.393220096G
+2021-06-27 10:32:36,264 INFO find_mapping() [714] - # References in region = 27, Unique k-mer in region:= 7
+2021-06-27 10:32:36,268 INFO find_mapping() [724] - Similar reads groups =7 [# reads = 75], overall reads groups = 52
+2021-06-27 10:32:36,272 INFO find_mapping() [741] - Mapping for region = 4, reads size = 45, ref size = 7,  amount of chunks = 5, cores=16, free memory = 11.345752064G
+2021-06-27 10:32:36,581 INFO find_mapping() [762] - Found mapping for region = 4
+2021-06-27 10:32:36,582 INFO find_mapping() [702] - Current process memory = 0.393220096G
+2021-06-27 10:32:36,589 INFO find_mapping() [714] - # References in region = 57, Unique k-mer in region:= 26
+2021-06-27 10:32:36,594 INFO find_mapping() [724] - Similar reads groups =26 [# reads = 149], overall reads groups = 77
+2021-06-27 10:32:36,597 INFO find_mapping() [741] - Mapping for region = 5, reads size = 51, ref size = 26,  amount of chunks = 5, cores=16, free memory = 11.346198528G
+2021-06-27 10:32:36,919 INFO find_mapping() [762] - Found mapping for region = 5
+2021-06-27 10:32:36,936 INFO find_mapping() [772] - min_mapped_reads_for_k-mer = 0, mapping size before filter = 1474
+2021-06-27 10:32:36,937 INFO find_mapping() [775] - Mapped reads before filter = 840
+2021-06-27 10:32:36,943 INFO find_mapping() [781] - Before filter low frequency regions: # Bacteria = 108, # Bacteria k-mer = 281
+2021-06-27 10:32:36,944 INFO find_mapping() [786] - min_mapped_reads_for_region = 0, mapping size after filter = 1474
+2021-06-27 10:32:36,946 INFO find_mapping() [789] - After filter low frequency regions: # Bacteria = 108, # Bacteria k-mer = 281
+2021-06-27 10:32:36,948 INFO find_mapping() [792] - Mapped reads after filter = 840
+2021-06-27 10:32:36,948 INFO timed() [9] - Entered 'filter_similar_mapped_reference'
+2021-06-27 10:32:36,948 INFO filter_similar_mapped_reference() [805] - Mapping size = 1474
+2021-06-27 10:32:36,977 INFO filter_similar_mapped_reference() [835] - UNIQUE REFERENCES: before = 108, after = 104
+2021-06-27 10:32:39,908 INFO filter_similar_mapped_reference() [856] - UNIQUE REFERENCES after remove subsets: before = 108, after = 100
+2021-06-27 10:32:39,917 INFO filter_similar_mapped_reference() [865] - Mapping size = 1357
+2021-06-27 10:32:39,919 INFO filter_similar_mapped_reference() [867] - Current mapped reads: 840
+2021-06-27 10:32:39,919 INFO timed() [17] - Done filter_similar_mapped_reference: 2.97 sec
+
+2021-06-27 10:32:39,945 INFO timed() [17] - Done find_mapping: 4.80 sec
+
+2021-06-27 10:32:39,945 INFO timed() [17] - Done init: 4.90 sec
+
+2021-06-27 10:32:39,946 INFO __init__() [422] - Current process memory = 0.393220096G
+2021-06-27 10:32:39,946 INFO timed() [9] - Entered 'do_iteration'
+2021-06-27 10:32:39,946 INFO timed() [9] - Entered 'calc_prob_n'
+2021-06-27 10:32:39,947 INFO calc_prob_n() [997] - Current process memory = 0.393220096G
+2021-06-27 10:32:39,947 INFO timed() [9] - Entered 'get_reads_seq_df'
+2021-06-27 10:32:41,255 INFO timed() [17] - Done get_reads_seq_df: 1.31 sec
+
+2021-06-27 10:32:41,264 INFO timed() [9] - Entered 'get_reads_df'
+2021-06-27 10:32:41,979 INFO timed() [17] - Done get_reads_df: 0.71 sec
+
+2021-06-27 10:32:41,979 INFO timed() [9] - Entered 'get_current_state_df'
+2021-06-27 10:32:43,219 INFO timed() [17] - Done get_current_state_df: 1.24 sec
+
+2021-06-27 10:32:43,219 INFO timed() [9] - Entered 'get_posteriors_df'
+2021-06-27 10:32:43,225 INFO timed() [17] - Done get_posteriors_df: 0.01 sec
+
+2021-06-27 10:32:43,225 INFO calc_prob_n() [1005] - length of dataframes: reads = 840, mapping = 1357, current_state_df = 314
+2021-06-27 10:32:43,362 INFO calc_prob_n() [1021] - Current process memory = 0.392433664G
+2021-06-27 10:32:43,535 INFO parallelize_calc_prob_n_for_single_ref() [1711] - Current process memory = 0.392433664G, Free memory = 11.350188032G, maximum processes = 14
+2021-06-27 10:32:43,536 INFO parallelize_calc_prob_n_for_single_ref() [1725] - Max rows in batch = 7638, cores = 14, max rows for single reference = 198
+2021-06-27 10:32:43,649 INFO parallelize_calc_prob_n_for_single_ref() [1765] - Max rows in chunk = 7638, amount of chunks = 1, pool size = 13
+2021-06-27 10:32:44,800 INFO parallelize_calc_prob_n_for_single_ref() [1770] - after pool
+2021-06-27 10:32:44,800 INFO parallelize_calc_prob_n_for_single_ref() [1774] - after concat mapping
+2021-06-27 10:32:44,915 INFO calc_prob_n() [1035] - Done parallelize_calc_prob_n_for_single_ref
+2021-06-27 10:32:45,320 INFO timed() [17] - Done calc_prob_n: 5.37 sec
+
+2021-06-27 10:32:45,320 INFO timed() [9] - Entered 'calc_posteriors'
+2021-06-27 10:32:45,321 INFO timed() [9] - Entered 'calc_likelihoods'
+2021-06-27 10:32:45,321 INFO timed() [9] - Entered 'get_reads_seq_df'
+2021-06-27 10:32:46,617 INFO timed() [17] - Done get_reads_seq_df: 1.30 sec
+
+2021-06-27 10:32:46,622 INFO timed() [9] - Entered 'get_reads_df'
+2021-06-27 10:32:47,316 INFO timed() [17] - Done get_reads_df: 0.69 sec
+
+2021-06-27 10:32:47,445 INFO calc_likelihoods() [1174] - Current process memory = 0.396890112G, Free memory = 11.341484032G, maximum processes = 14
+2021-06-27 10:32:47,445 INFO calc_likelihoods() [1180] - LIKELIHOOD: number of chunks = 5, mapping size = 1357, reads size = 840, merge length = 5424
+2021-06-27 10:32:50,097 INFO calc_likelihoods() [1193] - after pool
+2021-06-27 10:32:50,118 INFO calc_likelihoods() [1195] - after concat
+2021-06-27 10:32:50,197 INFO timed() [17] - Done calc_likelihoods: 4.88 sec
+
+2021-06-27 10:32:50,209 INFO calc_posteriors() [1227] - posteriors = 100 refs
+2021-06-27 10:32:50,217 INFO calc_posteriors() [1244] - zero_posteriors = 0 refs
+2021-06-27 10:32:50,219 INFO calc_posteriors() [1252] - non_zero_posteriors = 100 refs
+2021-06-27 10:32:50,223 INFO calc_posteriors() [1258] - posteriors = 100 refs
+2021-06-27 10:32:50,292 INFO timed() [17] - Done calc_posteriors: 4.97 sec
+
+2021-06-27 10:32:50,292 INFO timed() [9] - Entered 'calc_priors'
+2021-06-27 10:32:50,334 INFO timed() [17] - Done calc_priors: 0.04 sec
+
+2021-06-27 10:32:50,334 INFO timed() [9] - Entered 'update_bacteria_DB'
+2021-06-27 10:32:52,915 INFO update_bacteria_DB() [1420] - New bacteria DB size = 100, prev bacteria DB size = 139
+2021-06-27 10:32:52,927 INFO timed() [17] - Done update_bacteria_DB: 2.59 sec
+
+2021-06-27 10:32:52,927 INFO timed() [9] - Entered 'is_stable_state'
+2021-06-27 10:32:52,933 INFO is_stable_state() [1437] - Priors are not stable
+2021-06-27 10:32:52,942 INFO is_stable_state() [1438] - Diff:      Unique_Reference_id  Priors_x  Priors_y  Prior_diff  is_stable
+2               141031.0  0.015924  0.000000    0.015924      False
+25              634465.0  0.005996  0.000000    0.005996      False
+77             1049369.0  0.093896  0.122933   -0.029037      False
+86             1703179.0  0.068802  0.087143   -0.018341      False
+103            3493360.0  0.038852  0.031755    0.007097      False
+130            4509275.0  0.086022  0.133945   -0.047922      False
+2021-06-27 10:32:52,942 INFO timed() [17] - Done is_stable_state: 0.02 sec
+
+2021-06-27 10:32:52,948 INFO do_iteration() [1454] - Iteration 1: # reads 840
+2021-06-27 10:32:52,948 INFO timed() [17] - Done do_iteration: 13.00 sec
+
+2021-06-27 10:32:52,949 INFO execute() [102] - Create iteration 2 working dir = /home/veredhi/smurf2_github/tmp_res/iter.02
+2021-06-27 10:32:52,950 INFO __init__() [176] - min_coverage_for_split = 0.005, max_priors_diff_for_stability_test = 0.005, min_initial_frequency = 0.005
+2021-06-27 10:32:52,950 INFO __init__() [408] - Current process memory = 0.398901248G
+2021-06-27 10:32:52,950 INFO timed() [9] - Entered 'init'
+2021-06-27 10:32:52,950 INFO init() [481] - ITERATION 2
+2021-06-27 10:32:53,009 INFO init() [510] - Current state # references before filter = 100, after filter above threshold [0.0005] # = 99
+2021-06-27 10:32:53,052 INFO timed() [9] - Entered 'find_mapping'
+2021-06-27 10:32:53,052 INFO find_mapping() [682] - Current process memory = 0.398639104G
+2021-06-27 10:32:53,064 INFO find_mapping() [702] - Current process memory = 0.398639104G
+2021-06-27 10:32:53,070 INFO find_mapping() [714] - # References in region = 48, Unique k-mer in region:= 21
+2021-06-27 10:32:53,075 INFO find_mapping() [724] - Similar reads groups =21 [# reads = 83], overall reads groups = 58
+2021-06-27 10:32:53,078 INFO find_mapping() [741] - Mapping for region = 1, reads size = 37, ref size = 21,  amount of chunks = 5, cores=16, free memory = 11.338317824G
+2021-06-27 10:32:53,443 INFO find_mapping() [762] - Found mapping for region = 1
+2021-06-27 10:32:53,444 INFO find_mapping() [702] - Current process memory = 0.39837696G
+2021-06-27 10:32:53,452 INFO find_mapping() [714] - # References in region = 57, Unique k-mer in region:= 29
+2021-06-27 10:32:53,457 INFO find_mapping() [724] - Similar reads groups =29 [# reads = 158], overall reads groups = 71
+2021-06-27 10:32:53,460 INFO find_mapping() [741] - Mapping for region = 2, reads size = 42, ref size = 29,  amount of chunks = 5, cores=16, free memory = 11.334221824G
+2021-06-27 10:32:53,817 INFO find_mapping() [762] - Found mapping for region = 2
+2021-06-27 10:32:53,818 INFO find_mapping() [702] - Current process memory = 0.39837696G
+2021-06-27 10:32:53,826 INFO find_mapping() [714] - # References in region = 76, Unique k-mer in region:= 31
+2021-06-27 10:32:53,831 INFO find_mapping() [724] - Similar reads groups =31 [# reads = 152], overall reads groups = 79
+2021-06-27 10:32:53,835 INFO find_mapping() [741] - Mapping for region = 3, reads size = 48, ref size = 31,  amount of chunks = 5, cores=16, free memory = 11.333419008G
+2021-06-27 10:32:54,153 INFO find_mapping() [762] - Found mapping for region = 3
+2021-06-27 10:32:54,154 INFO find_mapping() [702] - Current process memory = 0.39837696G
+2021-06-27 10:32:54,161 INFO find_mapping() [714] - # References in region = 25, Unique k-mer in region:= 7
+2021-06-27 10:32:54,166 INFO find_mapping() [724] - Similar reads groups =7 [# reads = 75], overall reads groups = 52
+2021-06-27 10:32:54,170 INFO find_mapping() [741] - Mapping for region = 4, reads size = 45, ref size = 7,  amount of chunks = 5, cores=16, free memory = 11.331313664G
+2021-06-27 10:32:54,524 INFO find_mapping() [762] - Found mapping for region = 4
+2021-06-27 10:32:54,525 INFO find_mapping() [702] - Current process memory = 0.39837696G
+2021-06-27 10:32:54,534 INFO find_mapping() [714] - # References in region = 52, Unique k-mer in region:= 26
+2021-06-27 10:32:54,539 INFO find_mapping() [724] - Similar reads groups =26 [# reads = 149], overall reads groups = 77
+2021-06-27 10:32:54,543 INFO find_mapping() [741] - Mapping for region = 5, reads size = 51, ref size = 26,  amount of chunks = 5, cores=16, free memory = 11.336298496G
+2021-06-27 10:32:54,887 INFO find_mapping() [762] - Found mapping for region = 5
+2021-06-27 10:32:54,912 INFO find_mapping() [772] - min_mapped_reads_for_k-mer = 0, mapping size before filter = 1350
+2021-06-27 10:32:54,914 INFO find_mapping() [775] - Mapped reads before filter = 840
+2021-06-27 10:32:54,921 INFO find_mapping() [781] - Before filter low frequency regions: # Bacteria = 99, # Bacteria k-mer = 258
+2021-06-27 10:32:54,922 INFO find_mapping() [786] - min_mapped_reads_for_region = 0, mapping size after filter = 1350
+2021-06-27 10:32:54,925 INFO find_mapping() [789] - After filter low frequency regions: # Bacteria = 99, # Bacteria k-mer = 258
+2021-06-27 10:32:54,927 INFO find_mapping() [792] - Mapped reads after filter = 840
+2021-06-27 10:32:54,927 INFO timed() [9] - Entered 'filter_similar_mapped_reference'
+2021-06-27 10:32:54,927 INFO filter_similar_mapped_reference() [805] - Mapping size = 1350
+2021-06-27 10:32:54,956 INFO filter_similar_mapped_reference() [835] - UNIQUE REFERENCES: before = 99, after = 99
+2021-06-27 10:32:57,893 INFO filter_similar_mapped_reference() [856] - UNIQUE REFERENCES after remove subsets: before = 99, after = 99
+2021-06-27 10:32:57,899 INFO filter_similar_mapped_reference() [865] - Mapping size = 1350
+2021-06-27 10:32:57,901 INFO filter_similar_mapped_reference() [867] - Current mapped reads: 840
+2021-06-27 10:32:57,901 INFO timed() [17] - Done filter_similar_mapped_reference: 2.97 sec
+
+2021-06-27 10:32:57,916 INFO timed() [17] - Done find_mapping: 4.86 sec
+
+2021-06-27 10:32:57,917 INFO timed() [17] - Done init: 4.97 sec
+
+2021-06-27 10:32:57,917 INFO __init__() [422] - Current process memory = 0.39837696G
+2021-06-27 10:32:57,917 INFO timed() [9] - Entered 'do_iteration'
+2021-06-27 10:32:57,917 INFO timed() [9] - Entered 'calc_prob_n'
+2021-06-27 10:32:57,917 INFO calc_prob_n() [997] - Current process memory = 0.39837696G
+2021-06-27 10:32:57,917 INFO timed() [9] - Entered 'get_reads_seq_df'
+2021-06-27 10:32:59,206 INFO timed() [17] - Done get_reads_seq_df: 1.29 sec
+
+2021-06-27 10:32:59,211 INFO timed() [9] - Entered 'get_reads_df'
+2021-06-27 10:32:59,921 INFO timed() [17] - Done get_reads_df: 0.71 sec
+
+2021-06-27 10:32:59,921 INFO timed() [9] - Entered 'get_current_state_df'
+2021-06-27 10:33:01,152 INFO timed() [17] - Done get_current_state_df: 1.23 sec
+
+2021-06-27 10:33:01,152 INFO timed() [9] - Entered 'get_posteriors_df'
+2021-06-27 10:33:01,158 INFO timed() [17] - Done get_posteriors_df: 0.01 sec
+
+2021-06-27 10:33:01,158 INFO calc_prob_n() [1005] - length of dataframes: reads = 840, mapping = 1350, current_state_df = 260
+2021-06-27 10:33:01,292 INFO calc_prob_n() [1021] - Current process memory = 0.397852672G
+2021-06-27 10:33:01,439 INFO parallelize_calc_prob_n_for_single_ref() [1711] - Current process memory = 0.397852672G, Free memory = 11.340333056G, maximum processes = 14
+2021-06-27 10:33:01,440 INFO parallelize_calc_prob_n_for_single_ref() [1725] - Max rows in batch = 7526, cores = 14, max rows for single reference = 198
+2021-06-27 10:33:01,553 INFO parallelize_calc_prob_n_for_single_ref() [1765] - Max rows in chunk = 7526, amount of chunks = 1, pool size = 13
+2021-06-27 10:33:02,681 INFO parallelize_calc_prob_n_for_single_ref() [1770] - after pool
+2021-06-27 10:33:02,681 INFO parallelize_calc_prob_n_for_single_ref() [1774] - after concat mapping
+2021-06-27 10:33:02,806 INFO calc_prob_n() [1035] - Done parallelize_calc_prob_n_for_single_ref
+2021-06-27 10:33:03,241 INFO timed() [17] - Done calc_prob_n: 5.32 sec
+
+2021-06-27 10:33:03,241 INFO timed() [9] - Entered 'calc_posteriors'
+2021-06-27 10:33:03,241 INFO timed() [9] - Entered 'calc_likelihoods'
+2021-06-27 10:33:03,241 INFO timed() [9] - Entered 'get_reads_seq_df'
+2021-06-27 10:33:04,572 INFO timed() [17] - Done get_reads_seq_df: 1.33 sec
+
+2021-06-27 10:33:04,577 INFO timed() [9] - Entered 'get_reads_df'
+2021-06-27 10:33:05,308 INFO timed() [17] - Done get_reads_df: 0.73 sec
+
+2021-06-27 10:33:05,418 INFO calc_likelihoods() [1174] - Current process memory = 0.397914112G, Free memory = 11.33504512G, maximum processes = 14
+2021-06-27 10:33:05,418 INFO calc_likelihoods() [1180] - LIKELIHOOD: number of chunks = 5, mapping size = 1350, reads size = 840, merge length = 5396
+2021-06-27 10:33:08,190 INFO calc_likelihoods() [1193] - after pool
+2021-06-27 10:33:08,212 INFO calc_likelihoods() [1195] - after concat
+2021-06-27 10:33:08,305 INFO timed() [17] - Done calc_likelihoods: 5.06 sec
+
+2021-06-27 10:33:08,316 INFO calc_posteriors() [1227] - posteriors = 99 refs
+2021-06-27 10:33:08,324 INFO calc_posteriors() [1244] - zero_posteriors = 0 refs
+2021-06-27 10:33:08,326 INFO calc_posteriors() [1252] - non_zero_posteriors = 99 refs
+2021-06-27 10:33:08,330 INFO calc_posteriors() [1258] - posteriors = 99 refs
+2021-06-27 10:33:08,351 INFO timed() [17] - Done calc_posteriors: 5.11 sec
+
+2021-06-27 10:33:08,351 INFO timed() [9] - Entered 'calc_priors'
+2021-06-27 10:33:08,411 INFO timed() [17] - Done calc_priors: 0.06 sec
+
+2021-06-27 10:33:08,412 INFO timed() [9] - Entered 'update_bacteria_DB'
+2021-06-27 10:33:11,125 INFO update_bacteria_DB() [1420] - New bacteria DB size = 99, prev bacteria DB size = 100
+2021-06-27 10:33:11,137 INFO timed() [17] - Done update_bacteria_DB: 2.72 sec
+
+2021-06-27 10:33:11,137 INFO timed() [9] - Entered 'is_stable_state'
+2021-06-27 10:33:11,143 INFO is_stable_state() [1437] - Priors are not stable
+2021-06-27 10:33:11,151 INFO is_stable_state() [1438] - Diff:     Unique_Reference_id  Priors_x  Priors_y  Prior_diff  is_stable
+55            1049369.0  0.122933  0.137349   -0.014416      False
+63            1703179.0  0.087143  0.099028   -0.011885      False
+75            3493360.0  0.031755  0.024174    0.007581      False
+94            4509275.0  0.133945  0.159033   -0.025088      False
+2021-06-27 10:33:11,151 INFO timed() [17] - Done is_stable_state: 0.01 sec
+
+2021-06-27 10:33:11,157 INFO do_iteration() [1454] - Iteration 2: # reads 840
+2021-06-27 10:33:11,157 INFO timed() [17] - Done do_iteration: 13.24 sec
+
+2021-06-27 10:33:11,169 INFO execute() [102] - Create iteration 3 working dir = /home/veredhi/smurf2_github/tmp_res/iter.03
+2021-06-27 10:33:11,169 INFO __init__() [176] - min_coverage_for_split = 0.005, max_priors_diff_for_stability_test = 0.005, min_initial_frequency = 0.005
+2021-06-27 10:33:11,169 INFO __init__() [408] - Current process memory = 0.398688256G
+2021-06-27 10:33:11,169 INFO timed() [9] - Entered 'init'
+2021-06-27 10:33:11,169 INFO init() [481] - ITERATION 3
+2021-06-27 10:33:11,193 INFO init() [510] - Current state # references before filter = 99, after filter above threshold [0.0005] # = 99
+2021-06-27 10:33:11,246 INFO timed() [9] - Entered 'find_mapping'
+2021-06-27 10:33:11,246 INFO find_mapping() [682] - Current process memory = 0.398426112G
+2021-06-27 10:33:11,258 INFO find_mapping() [702] - Current process memory = 0.398426112G
+2021-06-27 10:33:11,265 INFO find_mapping() [714] - # References in region = 48, Unique k-mer in region:= 21
+2021-06-27 10:33:11,269 INFO find_mapping() [724] - Similar reads groups =21 [# reads = 83], overall reads groups = 58
+2021-06-27 10:33:11,273 INFO find_mapping() [741] - Mapping for region = 1, reads size = 37, ref size = 21,  amount of chunks = 5, cores=16, free memory = 11.332530176G
+2021-06-27 10:33:11,587 INFO find_mapping() [762] - Found mapping for region = 1
+2021-06-27 10:33:11,588 INFO find_mapping() [702] - Current process memory = 0.398426112G
+2021-06-27 10:33:11,595 INFO find_mapping() [714] - # References in region = 57, Unique k-mer in region:= 29
+2021-06-27 10:33:11,600 INFO find_mapping() [724] - Similar reads groups =29 [# reads = 158], overall reads groups = 71
+2021-06-27 10:33:11,604 INFO find_mapping() [741] - Mapping for region = 2, reads size = 42, ref size = 29,  amount of chunks = 5, cores=16, free memory = 11.329175552G
+2021-06-27 10:33:11,950 INFO find_mapping() [762] - Found mapping for region = 2
+2021-06-27 10:33:11,951 INFO find_mapping() [702] - Current process memory = 0.398229504G
+2021-06-27 10:33:11,959 INFO find_mapping() [714] - # References in region = 76, Unique k-mer in region:= 31
+2021-06-27 10:33:11,964 INFO find_mapping() [724] - Similar reads groups =31 [# reads = 152], overall reads groups = 79
+2021-06-27 10:33:11,968 INFO find_mapping() [741] - Mapping for region = 3, reads size = 48, ref size = 31,  amount of chunks = 5, cores=16, free memory = 11.330117632G
+2021-06-27 10:33:12,299 INFO find_mapping() [762] - Found mapping for region = 3
+2021-06-27 10:33:12,300 INFO find_mapping() [702] - Current process memory = 0.398229504G
+2021-06-27 10:33:12,308 INFO find_mapping() [714] - # References in region = 25, Unique k-mer in region:= 7
+2021-06-27 10:33:12,312 INFO find_mapping() [724] - Similar reads groups =7 [# reads = 75], overall reads groups = 52
+2021-06-27 10:33:12,316 INFO find_mapping() [741] - Mapping for region = 4, reads size = 45, ref size = 7,  amount of chunks = 5, cores=16, free memory = 11.327709184G
+2021-06-27 10:33:12,649 INFO find_mapping() [762] - Found mapping for region = 4
+2021-06-27 10:33:12,650 INFO find_mapping() [702] - Current process memory = 0.398229504G
+2021-06-27 10:33:12,657 INFO find_mapping() [714] - # References in region = 52, Unique k-mer in region:= 26
+2021-06-27 10:33:12,662 INFO find_mapping() [724] - Similar reads groups =26 [# reads = 149], overall reads groups = 77
+2021-06-27 10:33:12,666 INFO find_mapping() [741] - Mapping for region = 5, reads size = 51, ref size = 26,  amount of chunks = 5, cores=16, free memory = 11.327438848G
+2021-06-27 10:33:13,011 INFO find_mapping() [762] - Found mapping for region = 5
+2021-06-27 10:33:13,045 INFO find_mapping() [772] - min_mapped_reads_for_k-mer = 0, mapping size before filter = 1350
+2021-06-27 10:33:13,048 INFO find_mapping() [775] - Mapped reads before filter = 840
+2021-06-27 10:33:13,056 INFO find_mapping() [781] - Before filter low frequency regions: # Bacteria = 99, # Bacteria k-mer = 258
+2021-06-27 10:33:13,056 INFO find_mapping() [786] - min_mapped_reads_for_region = 0, mapping size after filter = 1350
+2021-06-27 10:33:13,059 INFO find_mapping() [789] - After filter low frequency regions: # Bacteria = 99, # Bacteria k-mer = 258
+2021-06-27 10:33:13,060 INFO find_mapping() [792] - Mapped reads after filter = 840
+2021-06-27 10:33:13,060 INFO timed() [9] - Entered 'filter_similar_mapped_reference'
+2021-06-27 10:33:13,060 INFO filter_similar_mapped_reference() [805] - Mapping size = 1350
+2021-06-27 10:33:13,089 INFO filter_similar_mapped_reference() [835] - UNIQUE REFERENCES: before = 99, after = 99
+2021-06-27 10:33:16,054 INFO filter_similar_mapped_reference() [856] - UNIQUE REFERENCES after remove subsets: before = 99, after = 99
+2021-06-27 10:33:16,062 INFO filter_similar_mapped_reference() [865] - Mapping size = 1350
+2021-06-27 10:33:16,063 INFO filter_similar_mapped_reference() [867] - Current mapped reads: 840
+2021-06-27 10:33:16,063 INFO timed() [17] - Done filter_similar_mapped_reference: 3.00 sec
+
+2021-06-27 10:33:16,075 INFO timed() [17] - Done find_mapping: 4.83 sec
+
+2021-06-27 10:33:16,075 INFO timed() [17] - Done init: 4.91 sec
+
+2021-06-27 10:33:16,076 INFO __init__() [422] - Current process memory = 0.398229504G
+2021-06-27 10:33:16,093 INFO timed() [9] - Entered 'do_iteration'
+2021-06-27 10:33:16,093 INFO timed() [9] - Entered 'calc_prob_n'
+2021-06-27 10:33:16,094 INFO calc_prob_n() [997] - Current process memory = 0.398229504G
+2021-06-27 10:33:16,094 INFO timed() [9] - Entered 'get_reads_seq_df'
+2021-06-27 10:33:17,420 INFO timed() [17] - Done get_reads_seq_df: 1.33 sec
+
+2021-06-27 10:33:17,424 INFO timed() [9] - Entered 'get_reads_df'
+2021-06-27 10:33:18,145 INFO timed() [17] - Done get_reads_df: 0.72 sec
+
+2021-06-27 10:33:18,145 INFO timed() [9] - Entered 'get_current_state_df'
+2021-06-27 10:33:19,347 INFO timed() [17] - Done get_current_state_df: 1.20 sec
+
+2021-06-27 10:33:19,347 INFO timed() [9] - Entered 'get_posteriors_df'
+2021-06-27 10:33:19,352 INFO timed() [17] - Done get_posteriors_df: 0.01 sec
+
+2021-06-27 10:33:19,353 INFO calc_prob_n() [1005] - length of dataframes: reads = 840, mapping = 1350, current_state_df = 258
+2021-06-27 10:33:19,480 INFO calc_prob_n() [1021] - Current process memory = 0.397705216G
+2021-06-27 10:33:19,625 INFO parallelize_calc_prob_n_for_single_ref() [1711] - Current process memory = 0.397705216G, Free memory = 11.340460032G, maximum processes = 14
+2021-06-27 10:33:19,627 INFO parallelize_calc_prob_n_for_single_ref() [1725] - Max rows in batch = 7529, cores = 14, max rows for single reference = 198
+2021-06-27 10:33:19,736 INFO parallelize_calc_prob_n_for_single_ref() [1765] - Max rows in chunk = 7529, amount of chunks = 1, pool size = 13
+2021-06-27 10:33:20,881 INFO parallelize_calc_prob_n_for_single_ref() [1770] - after pool
+2021-06-27 10:33:20,881 INFO parallelize_calc_prob_n_for_single_ref() [1774] - after concat mapping
+2021-06-27 10:33:21,000 INFO calc_prob_n() [1035] - Done parallelize_calc_prob_n_for_single_ref
+2021-06-27 10:33:21,410 INFO timed() [17] - Done calc_prob_n: 5.32 sec
+
+2021-06-27 10:33:21,410 INFO timed() [9] - Entered 'calc_posteriors'
+2021-06-27 10:33:21,410 INFO timed() [9] - Entered 'calc_likelihoods'
+2021-06-27 10:33:21,410 INFO timed() [9] - Entered 'get_reads_seq_df'
+2021-06-27 10:33:22,727 INFO timed() [17] - Done get_reads_seq_df: 1.32 sec
+
+2021-06-27 10:33:22,731 INFO timed() [9] - Entered 'get_reads_df'
+2021-06-27 10:33:23,450 INFO timed() [17] - Done get_reads_df: 0.72 sec
+
+2021-06-27 10:33:23,553 INFO calc_likelihoods() [1174] - Current process memory = 0.397705216G, Free memory = 11.334373376G, maximum processes = 14
+2021-06-27 10:33:23,553 INFO calc_likelihoods() [1180] - LIKELIHOOD: number of chunks = 5, mapping size = 1350, reads size = 840, merge length = 5396
+2021-06-27 10:33:26,281 INFO calc_likelihoods() [1193] - after pool
+2021-06-27 10:33:26,311 INFO calc_likelihoods() [1195] - after concat
+2021-06-27 10:33:26,392 INFO timed() [17] - Done calc_likelihoods: 4.98 sec
+
+2021-06-27 10:33:26,403 INFO calc_posteriors() [1227] - posteriors = 99 refs
+2021-06-27 10:33:26,410 INFO calc_posteriors() [1244] - zero_posteriors = 0 refs
+2021-06-27 10:33:26,413 INFO calc_posteriors() [1252] - non_zero_posteriors = 99 refs
+2021-06-27 10:33:26,416 INFO calc_posteriors() [1258] - posteriors = 99 refs
+2021-06-27 10:33:26,480 INFO timed() [17] - Done calc_posteriors: 5.07 sec
+
+2021-06-27 10:33:26,480 INFO timed() [9] - Entered 'calc_priors'
+2021-06-27 10:33:26,540 INFO timed() [17] - Done calc_priors: 0.06 sec
+
+2021-06-27 10:33:26,540 INFO timed() [9] - Entered 'update_bacteria_DB'
+2021-06-27 10:33:29,238 INFO update_bacteria_DB() [1420] - New bacteria DB size = 99, prev bacteria DB size = 99
+2021-06-27 10:33:29,248 INFO timed() [17] - Done update_bacteria_DB: 2.71 sec
+
+2021-06-27 10:33:29,248 INFO timed() [9] - Entered 'is_stable_state'
+2021-06-27 10:33:29,254 INFO is_stable_state() [1437] - Priors are not stable
+2021-06-27 10:33:29,262 INFO is_stable_state() [1438] - Diff:     Unique_Reference_id  Priors_x  Priors_y  Prior_diff  is_stable
+54            1049369.0  0.137349  0.145922   -0.008574      False
+62            1703179.0  0.099028  0.106669   -0.007641      False
+74            3493360.0  0.024174  0.018151    0.006023      False
+93            4509275.0  0.159033  0.172706   -0.013674      False
+2021-06-27 10:33:29,262 INFO timed() [17] - Done is_stable_state: 0.01 sec
+
+2021-06-27 10:33:29,268 INFO do_iteration() [1454] - Iteration 3: # reads 840
+2021-06-27 10:33:29,268 INFO timed() [17] - Done do_iteration: 13.18 sec
+
+2021-06-27 10:33:29,270 INFO execute() [102] - Create iteration 4 working dir = /home/veredhi/smurf2_github/tmp_res/iter.04
+2021-06-27 10:33:29,270 INFO __init__() [176] - min_coverage_for_split = 0.005, max_priors_diff_for_stability_test = 0.005, min_initial_frequency = 0.005
+2021-06-27 10:33:29,270 INFO __init__() [408] - Current process memory = 0.39888896G
+2021-06-27 10:33:29,270 INFO timed() [9] - Entered 'init'
+2021-06-27 10:33:29,270 INFO init() [481] - ITERATION 4
+2021-06-27 10:33:29,290 INFO init() [510] - Current state # references before filter = 99, after filter above threshold [0.0005] # = 99
+2021-06-27 10:33:29,361 INFO timed() [9] - Entered 'find_mapping'
+2021-06-27 10:33:29,361 INFO find_mapping() [682] - Current process memory = 0.398753792G
+2021-06-27 10:33:29,374 INFO find_mapping() [702] - Current process memory = 0.398753792G
+2021-06-27 10:33:29,380 INFO find_mapping() [714] - # References in region = 48, Unique k-mer in region:= 21
+2021-06-27 10:33:29,385 INFO find_mapping() [724] - Similar reads groups =21 [# reads = 83], overall reads groups = 58
+2021-06-27 10:33:29,389 INFO find_mapping() [741] - Mapping for region = 1, reads size = 37, ref size = 21,  amount of chunks = 5, cores=16, free memory = 11.331825664G
+2021-06-27 10:33:29,719 INFO find_mapping() [762] - Found mapping for region = 1
+2021-06-27 10:33:29,720 INFO find_mapping() [702] - Current process memory = 0.398753792G
+2021-06-27 10:33:29,727 INFO find_mapping() [714] - # References in region = 57, Unique k-mer in region:= 29
+2021-06-27 10:33:29,732 INFO find_mapping() [724] - Similar reads groups =29 [# reads = 158], overall reads groups = 71
+2021-06-27 10:33:29,736 INFO find_mapping() [741] - Mapping for region = 2, reads size = 42, ref size = 29,  amount of chunks = 5, cores=16, free memory = 11.327684608G
+2021-06-27 10:33:30,090 INFO find_mapping() [762] - Found mapping for region = 2
+2021-06-27 10:33:30,092 INFO find_mapping() [702] - Current process memory = 0.398753792G
+2021-06-27 10:33:30,100 INFO find_mapping() [714] - # References in region = 76, Unique k-mer in region:= 31
+2021-06-27 10:33:30,105 INFO find_mapping() [724] - Similar reads groups =31 [# reads = 152], overall reads groups = 79
+2021-06-27 10:33:30,108 INFO find_mapping() [741] - Mapping for region = 3, reads size = 48, ref size = 31,  amount of chunks = 5, cores=16, free memory = 11.326943232G
+2021-06-27 10:33:30,447 INFO find_mapping() [762] - Found mapping for region = 3
+2021-06-27 10:33:30,448 INFO find_mapping() [702] - Current process memory = 0.398753792G
+2021-06-27 10:33:30,456 INFO find_mapping() [714] - # References in region = 25, Unique k-mer in region:= 7
+2021-06-27 10:33:30,461 INFO find_mapping() [724] - Similar reads groups =7 [# reads = 75], overall reads groups = 52
+2021-06-27 10:33:30,465 INFO find_mapping() [741] - Mapping for region = 4, reads size = 45, ref size = 7,  amount of chunks = 5, cores=16, free memory = 11.328344064G
+2021-06-27 10:33:30,808 INFO find_mapping() [762] - Found mapping for region = 4
+2021-06-27 10:33:30,809 INFO find_mapping() [702] - Current process memory = 0.398753792G
+2021-06-27 10:33:30,816 INFO find_mapping() [714] - # References in region = 52, Unique k-mer in region:= 26
+2021-06-27 10:33:30,821 INFO find_mapping() [724] - Similar reads groups =26 [# reads = 149], overall reads groups = 77
+2021-06-27 10:33:30,825 INFO find_mapping() [741] - Mapping for region = 5, reads size = 51, ref size = 26,  amount of chunks = 5, cores=16, free memory = 11.327684608G
+2021-06-27 10:33:31,175 INFO find_mapping() [762] - Found mapping for region = 5
+2021-06-27 10:33:31,233 INFO find_mapping() [772] - min_mapped_reads_for_k-mer = 0, mapping size before filter = 1350
+2021-06-27 10:33:31,236 INFO find_mapping() [775] - Mapped reads before filter = 840
+2021-06-27 10:33:31,244 INFO find_mapping() [781] - Before filter low frequency regions: # Bacteria = 99, # Bacteria k-mer = 258
+2021-06-27 10:33:31,245 INFO find_mapping() [786] - min_mapped_reads_for_region = 0, mapping size after filter = 1350
+2021-06-27 10:33:31,247 INFO find_mapping() [789] - After filter low frequency regions: # Bacteria = 99, # Bacteria k-mer = 258
+2021-06-27 10:33:31,249 INFO find_mapping() [792] - Mapped reads after filter = 840
+2021-06-27 10:33:31,249 INFO timed() [9] - Entered 'filter_similar_mapped_reference'
+2021-06-27 10:33:31,249 INFO filter_similar_mapped_reference() [805] - Mapping size = 1350
+2021-06-27 10:33:31,278 INFO filter_similar_mapped_reference() [835] - UNIQUE REFERENCES: before = 99, after = 99
+2021-06-27 10:33:34,160 INFO filter_similar_mapped_reference() [856] - UNIQUE REFERENCES after remove subsets: before = 99, after = 99
+2021-06-27 10:33:34,167 INFO filter_similar_mapped_reference() [865] - Mapping size = 1350
+2021-06-27 10:33:34,169 INFO filter_similar_mapped_reference() [867] - Current mapped reads: 840
+2021-06-27 10:33:34,169 INFO timed() [17] - Done filter_similar_mapped_reference: 2.92 sec
+
+2021-06-27 10:33:34,181 INFO timed() [17] - Done find_mapping: 4.82 sec
+
+2021-06-27 10:33:34,182 INFO timed() [17] - Done init: 4.91 sec
+
+2021-06-27 10:33:34,182 INFO __init__() [422] - Current process memory = 0.398753792G
+2021-06-27 10:33:34,228 INFO timed() [9] - Entered 'do_iteration'
+2021-06-27 10:33:34,229 INFO timed() [9] - Entered 'calc_prob_n'
+2021-06-27 10:33:34,229 INFO calc_prob_n() [997] - Current process memory = 0.398753792G
+2021-06-27 10:33:34,229 INFO timed() [9] - Entered 'get_reads_seq_df'
+2021-06-27 10:33:35,574 INFO timed() [17] - Done get_reads_seq_df: 1.34 sec
+
+2021-06-27 10:33:35,578 INFO timed() [9] - Entered 'get_reads_df'
+2021-06-27 10:33:36,284 INFO timed() [17] - Done get_reads_df: 0.71 sec
+
+2021-06-27 10:33:36,284 INFO timed() [9] - Entered 'get_current_state_df'
+2021-06-27 10:33:37,432 INFO timed() [17] - Done get_current_state_df: 1.15 sec
+
+2021-06-27 10:33:37,433 INFO timed() [9] - Entered 'get_posteriors_df'
+2021-06-27 10:33:37,438 INFO timed() [17] - Done get_posteriors_df: 0.01 sec
+
+2021-06-27 10:33:37,438 INFO calc_prob_n() [1005] - length of dataframes: reads = 840, mapping = 1350, current_state_df = 258
+2021-06-27 10:33:37,562 INFO calc_prob_n() [1021] - Current process memory = 0.398753792G
+2021-06-27 10:33:37,734 INFO parallelize_calc_prob_n_for_single_ref() [1711] - Current process memory = 0.398753792G, Free memory = 11.33959168G, maximum processes = 14
+2021-06-27 10:33:37,735 INFO parallelize_calc_prob_n_for_single_ref() [1725] - Max rows in batch = 7509, cores = 14, max rows for single reference = 198
+2021-06-27 10:33:37,844 INFO parallelize_calc_prob_n_for_single_ref() [1765] - Max rows in chunk = 7509, amount of chunks = 1, pool size = 13
+2021-06-27 10:33:38,981 INFO parallelize_calc_prob_n_for_single_ref() [1770] - after pool
+2021-06-27 10:33:38,981 INFO parallelize_calc_prob_n_for_single_ref() [1774] - after concat mapping
+2021-06-27 10:33:39,096 INFO calc_prob_n() [1035] - Done parallelize_calc_prob_n_for_single_ref
+2021-06-27 10:33:39,553 INFO timed() [17] - Done calc_prob_n: 5.32 sec
+
+2021-06-27 10:33:39,553 INFO timed() [9] - Entered 'calc_posteriors'
+2021-06-27 10:33:39,553 INFO timed() [9] - Entered 'calc_likelihoods'
+2021-06-27 10:33:39,553 INFO timed() [9] - Entered 'get_reads_seq_df'
+2021-06-27 10:33:40,827 INFO timed() [17] - Done get_reads_seq_df: 1.27 sec
+
+2021-06-27 10:33:40,831 INFO timed() [9] - Entered 'get_reads_df'
+2021-06-27 10:33:41,540 INFO timed() [17] - Done get_reads_df: 0.71 sec
+
+2021-06-27 10:33:41,672 INFO calc_likelihoods() [1174] - Current process memory = 0.398491648G, Free memory = 11.334803456G, maximum processes = 14
+2021-06-27 10:33:41,672 INFO calc_likelihoods() [1180] - LIKELIHOOD: number of chunks = 5, mapping size = 1350, reads size = 840, merge length = 5396
+2021-06-27 10:33:44,346 INFO calc_likelihoods() [1193] - after pool
+2021-06-27 10:33:44,380 INFO calc_likelihoods() [1195] - after concat
+2021-06-27 10:33:44,521 INFO timed() [17] - Done calc_likelihoods: 4.97 sec
+
+2021-06-27 10:33:44,532 INFO calc_posteriors() [1227] - posteriors = 99 refs
+2021-06-27 10:33:44,540 INFO calc_posteriors() [1244] - zero_posteriors = 0 refs
+2021-06-27 10:33:44,543 INFO calc_posteriors() [1252] - non_zero_posteriors = 99 refs
+2021-06-27 10:33:44,546 INFO calc_posteriors() [1258] - posteriors = 99 refs
+2021-06-27 10:33:44,569 INFO timed() [17] - Done calc_posteriors: 5.02 sec
+
+2021-06-27 10:33:44,569 INFO timed() [9] - Entered 'calc_priors'
+2021-06-27 10:33:44,605 INFO timed() [17] - Done calc_priors: 0.04 sec
+
+2021-06-27 10:33:44,605 INFO timed() [9] - Entered 'update_bacteria_DB'
+2021-06-27 10:33:47,287 INFO update_bacteria_DB() [1420] - New bacteria DB size = 99, prev bacteria DB size = 99
+2021-06-27 10:33:47,297 INFO timed() [17] - Done update_bacteria_DB: 2.69 sec
+
+2021-06-27 10:33:47,297 INFO timed() [9] - Entered 'is_stable_state'
+2021-06-27 10:33:47,303 INFO is_stable_state() [1437] - Priors are not stable
+2021-06-27 10:33:47,311 INFO is_stable_state() [1438] - Diff:     Unique_Reference_id  Priors_x  Priors_y  Prior_diff  is_stable
+62            1703179.0  0.106669  0.111674   -0.005004      False
+93            4509275.0  0.172706  0.179914   -0.007208      False
+2021-06-27 10:33:47,311 INFO timed() [17] - Done is_stable_state: 0.01 sec
+
+2021-06-27 10:33:47,316 INFO do_iteration() [1454] - Iteration 4: # reads 840
+2021-06-27 10:33:47,316 INFO timed() [17] - Done do_iteration: 13.09 sec
+
+2021-06-27 10:33:47,318 INFO execute() [102] - Create iteration 5 working dir = /home/veredhi/smurf2_github/tmp_res/iter.05
+2021-06-27 10:33:47,318 INFO __init__() [176] - min_coverage_for_split = 0.005, max_priors_diff_for_stability_test = 0.005, min_initial_frequency = 0.005
+2021-06-27 10:33:47,318 INFO __init__() [408] - Current process memory = 0.398987264G
+2021-06-27 10:33:47,318 INFO timed() [9] - Entered 'init'
+2021-06-27 10:33:47,318 INFO init() [481] - ITERATION 5
+2021-06-27 10:33:47,353 INFO init() [510] - Current state # references before filter = 99, after filter above threshold [0.0005] # = 99
+2021-06-27 10:33:47,407 INFO timed() [9] - Entered 'find_mapping'
+2021-06-27 10:33:47,407 INFO find_mapping() [682] - Current process memory = 0.39872512G
+2021-06-27 10:33:47,418 INFO find_mapping() [702] - Current process memory = 0.39872512G
+2021-06-27 10:33:47,424 INFO find_mapping() [714] - # References in region = 48, Unique k-mer in region:= 21
+2021-06-27 10:33:47,429 INFO find_mapping() [724] - Similar reads groups =21 [# reads = 83], overall reads groups = 58
+2021-06-27 10:33:47,432 INFO find_mapping() [741] - Mapping for region = 1, reads size = 37, ref size = 21,  amount of chunks = 5, cores=16, free memory = 11.33473792G
+2021-06-27 10:33:47,759 INFO find_mapping() [762] - Found mapping for region = 1
+2021-06-27 10:33:47,760 INFO find_mapping() [702] - Current process memory = 0.39872512G
+2021-06-27 10:33:47,767 INFO find_mapping() [714] - # References in region = 57, Unique k-mer in region:= 29
+2021-06-27 10:33:47,772 INFO find_mapping() [724] - Similar reads groups =29 [# reads = 158], overall reads groups = 71
+2021-06-27 10:33:47,776 INFO find_mapping() [741] - Mapping for region = 2, reads size = 42, ref size = 29,  amount of chunks = 5, cores=16, free memory = 11.328077824G
+2021-06-27 10:33:48,134 INFO find_mapping() [762] - Found mapping for region = 2
+2021-06-27 10:33:48,135 INFO find_mapping() [702] - Current process memory = 0.39872512G
+2021-06-27 10:33:48,144 INFO find_mapping() [714] - # References in region = 76, Unique k-mer in region:= 31
+2021-06-27 10:33:48,148 INFO find_mapping() [724] - Similar reads groups =31 [# reads = 152], overall reads groups = 79
+2021-06-27 10:33:48,152 INFO find_mapping() [741] - Mapping for region = 3, reads size = 48, ref size = 31,  amount of chunks = 5, cores=16, free memory = 11.328069632G
+2021-06-27 10:33:48,474 INFO find_mapping() [762] - Found mapping for region = 3
+2021-06-27 10:33:48,475 INFO find_mapping() [702] - Current process memory = 0.398491648G
+2021-06-27 10:33:48,482 INFO find_mapping() [714] - # References in region = 25, Unique k-mer in region:= 7
+2021-06-27 10:33:48,487 INFO find_mapping() [724] - Similar reads groups =7 [# reads = 75], overall reads groups = 52
+2021-06-27 10:33:48,491 INFO find_mapping() [741] - Mapping for region = 4, reads size = 45, ref size = 7,  amount of chunks = 5, cores=16, free memory = 11.329933312G
+2021-06-27 10:33:48,845 INFO find_mapping() [762] - Found mapping for region = 4
+2021-06-27 10:33:48,846 INFO find_mapping() [702] - Current process memory = 0.398491648G
+2021-06-27 10:33:48,855 INFO find_mapping() [714] - # References in region = 52, Unique k-mer in region:= 26
+2021-06-27 10:33:48,859 INFO find_mapping() [724] - Similar reads groups =26 [# reads = 149], overall reads groups = 77
+2021-06-27 10:33:48,863 INFO find_mapping() [741] - Mapping for region = 5, reads size = 51, ref size = 26,  amount of chunks = 5, cores=16, free memory = 11.329159168G
+2021-06-27 10:33:49,174 INFO find_mapping() [762] - Found mapping for region = 5
+2021-06-27 10:33:49,246 INFO find_mapping() [772] - min_mapped_reads_for_k-mer = 0, mapping size before filter = 1350
+2021-06-27 10:33:49,251 INFO find_mapping() [775] - Mapped reads before filter = 840
+2021-06-27 10:33:49,262 INFO find_mapping() [781] - Before filter low frequency regions: # Bacteria = 99, # Bacteria k-mer = 258
+2021-06-27 10:33:49,264 INFO find_mapping() [786] - min_mapped_reads_for_region = 0, mapping size after filter = 1350
+2021-06-27 10:33:49,267 INFO find_mapping() [789] - After filter low frequency regions: # Bacteria = 99, # Bacteria k-mer = 258
+2021-06-27 10:33:49,268 INFO find_mapping() [792] - Mapped reads after filter = 840
+2021-06-27 10:33:49,269 INFO timed() [9] - Entered 'filter_similar_mapped_reference'
+2021-06-27 10:33:49,269 INFO filter_similar_mapped_reference() [805] - Mapping size = 1350
+2021-06-27 10:33:49,298 INFO filter_similar_mapped_reference() [835] - UNIQUE REFERENCES: before = 99, after = 99
+2021-06-27 10:33:52,293 INFO filter_similar_mapped_reference() [856] - UNIQUE REFERENCES after remove subsets: before = 99, after = 99
+2021-06-27 10:33:52,300 INFO filter_similar_mapped_reference() [865] - Mapping size = 1350
+2021-06-27 10:33:52,302 INFO filter_similar_mapped_reference() [867] - Current mapped reads: 840
+2021-06-27 10:33:52,303 INFO timed() [17] - Done filter_similar_mapped_reference: 3.03 sec
+
+2021-06-27 10:33:52,333 INFO timed() [17] - Done find_mapping: 4.93 sec
+
+2021-06-27 10:33:52,333 INFO timed() [17] - Done init: 5.01 sec
+
+2021-06-27 10:33:52,333 INFO __init__() [422] - Current process memory = 0.398491648G
+2021-06-27 10:33:52,387 INFO timed() [9] - Entered 'do_iteration'
+2021-06-27 10:33:52,387 INFO timed() [9] - Entered 'calc_prob_n'
+2021-06-27 10:33:52,388 INFO calc_prob_n() [997] - Current process memory = 0.398491648G
+2021-06-27 10:33:52,388 INFO timed() [9] - Entered 'get_reads_seq_df'
+2021-06-27 10:33:53,663 INFO timed() [17] - Done get_reads_seq_df: 1.27 sec
+
+2021-06-27 10:33:53,667 INFO timed() [9] - Entered 'get_reads_df'
+2021-06-27 10:33:54,378 INFO timed() [17] - Done get_reads_df: 0.71 sec
+
+2021-06-27 10:33:54,378 INFO timed() [9] - Entered 'get_current_state_df'
+2021-06-27 10:33:55,591 INFO timed() [17] - Done get_current_state_df: 1.21 sec
+
+2021-06-27 10:33:55,591 INFO timed() [9] - Entered 'get_posteriors_df'
+2021-06-27 10:33:55,597 INFO timed() [17] - Done get_posteriors_df: 0.01 sec
+
+2021-06-27 10:33:55,597 INFO calc_prob_n() [1005] - length of dataframes: reads = 840, mapping = 1350, current_state_df = 258
+2021-06-27 10:33:55,720 INFO calc_prob_n() [1021] - Current process memory = 0.398229504G
+2021-06-27 10:33:55,865 INFO parallelize_calc_prob_n_for_single_ref() [1711] - Current process memory = 0.398229504G, Free memory = 11.34061568G, maximum processes = 14
+2021-06-27 10:33:55,866 INFO parallelize_calc_prob_n_for_single_ref() [1725] - Max rows in batch = 7520, cores = 14, max rows for single reference = 198
+2021-06-27 10:33:55,975 INFO parallelize_calc_prob_n_for_single_ref() [1765] - Max rows in chunk = 7520, amount of chunks = 1, pool size = 13
+2021-06-27 10:33:57,156 INFO parallelize_calc_prob_n_for_single_ref() [1770] - after pool
+2021-06-27 10:33:57,156 INFO parallelize_calc_prob_n_for_single_ref() [1774] - after concat mapping
+2021-06-27 10:33:57,224 INFO calc_prob_n() [1035] - Done parallelize_calc_prob_n_for_single_ref
+2021-06-27 10:33:57,706 INFO timed() [17] - Done calc_prob_n: 5.32 sec
+
+2021-06-27 10:33:57,707 INFO timed() [9] - Entered 'calc_posteriors'
+2021-06-27 10:33:57,707 INFO timed() [9] - Entered 'calc_likelihoods'
+2021-06-27 10:33:57,707 INFO timed() [9] - Entered 'get_reads_seq_df'
+2021-06-27 10:33:59,031 INFO timed() [17] - Done get_reads_seq_df: 1.32 sec
+
+2021-06-27 10:33:59,038 INFO timed() [9] - Entered 'get_reads_df'
+2021-06-27 10:33:59,754 INFO timed() [17] - Done get_reads_df: 0.72 sec
+
+2021-06-27 10:33:59,857 INFO calc_likelihoods() [1174] - Current process memory = 0.402706432G, Free memory = 11.331411968G, maximum processes = 14
+2021-06-27 10:33:59,857 INFO calc_likelihoods() [1180] - LIKELIHOOD: number of chunks = 5, mapping size = 1350, reads size = 840, merge length = 5396
+2021-06-27 10:34:02,591 INFO calc_likelihoods() [1193] - after pool
+2021-06-27 10:34:02,627 INFO calc_likelihoods() [1195] - after concat
+2021-06-27 10:34:02,716 INFO timed() [17] - Done calc_likelihoods: 5.01 sec
+
+2021-06-27 10:34:02,727 INFO calc_posteriors() [1227] - posteriors = 99 refs
+2021-06-27 10:34:02,734 INFO calc_posteriors() [1244] - zero_posteriors = 0 refs
+2021-06-27 10:34:02,737 INFO calc_posteriors() [1252] - non_zero_posteriors = 99 refs
+2021-06-27 10:34:02,740 INFO calc_posteriors() [1258] - posteriors = 99 refs
+2021-06-27 10:34:02,782 INFO timed() [17] - Done calc_posteriors: 5.08 sec
+
+2021-06-27 10:34:02,782 INFO timed() [9] - Entered 'calc_priors'
+2021-06-27 10:34:02,820 INFO timed() [17] - Done calc_priors: 0.04 sec
+
+2021-06-27 10:34:02,820 INFO timed() [9] - Entered 'update_bacteria_DB'
+2021-06-27 10:34:05,531 INFO update_bacteria_DB() [1420] - New bacteria DB size = 99, prev bacteria DB size = 99
+2021-06-27 10:34:05,543 INFO timed() [17] - Done update_bacteria_DB: 2.72 sec
+
+2021-06-27 10:34:05,544 INFO timed() [9] - Entered 'is_stable_state'
+2021-06-27 10:34:05,550 INFO is_stable_state() [1441] - Stable state!
+2021-06-27 10:34:05,550 INFO timed() [9] - Entered 'do_post_process'
+2021-06-27 10:34:05,599 INFO do_post_process() [1493] - try to read csv: /home/veredhi/smurf2_github/tmp_res/iter.00/unique_ref_id_to_ref_id.csv
+2021-06-27 10:34:05,600 INFO do_post_process() [1495] - try to read csv: /home/veredhi/smurf2_github/tmp_res/iter.00/unique_ref_id_to_ref_id.csv
+2021-06-27 10:34:06,638 INFO timed() [17] - Done do_post_process: 1.09 sec
+
+2021-06-27 10:34:06,638 INFO timed() [17] - Done is_stable_state: 1.09 sec
+
+2021-06-27 10:34:06,651 INFO do_iteration() [1454] - Iteration 5: # reads 840
+2021-06-27 10:34:06,652 INFO timed() [17] - Done do_iteration: 14.26 sec
+
+2021-06-27 10:34:06,652 INFO execute() [114] - DONE SMURF2, iterations = #5
+2021-06-27 10:34:06,724 INFO execute() [126] - post process: # reads = 840
+2021-06-27 10:34:16,584 ERROR convert_to_smurf_format() [235] - error extracting: ex = 577507.0, id=577507.0, region = 1, prior=0.199884099179
+2021-06-27 10:34:16,586 ERROR convert_to_smurf_format() [235] - error extracting: ex = 317023.0, id=317023.0, region = 1, prior=0.00475405189645
+2021-06-27 10:34:16,588 ERROR convert_to_smurf_format() [235] - error extracting: ex = 363827.0, id=363827.0, region = 1, prior=0.00161321301299
+2021-06-27 10:34:16,589 ERROR convert_to_smurf_format() [235] - error extracting: ex = 412883.0, id=412883.0, region = 1, prior=0.00163828376989
+2021-06-27 10:34:16,591 ERROR convert_to_smurf_format() [235] - error extracting: ex = 613763.0, id=613763.0, region = 1, prior=0.00162465023318
+2021-06-27 10:34:16,592 ERROR convert_to_smurf_format() [235] - error extracting: ex = 620237.0, id=620237.0, region = 1, prior=0.00119947674253
+2021-06-27 10:34:16,593 ERROR convert_to_smurf_format() [235] - error extracting: ex = 657930.0, id=657930.0, region = 1, prior=0.00162083493743
+2021-06-27 10:34:16,594 ERROR convert_to_smurf_format() [235] - error extracting: ex = 681302.0, id=681302.0, region = 1, prior=0.00128127324018
+2021-06-27 10:34:16,595 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4490358.0, id=4490358.0, region = 1, prior=0.00314171701602
+2021-06-27 10:34:16,597 ERROR convert_to_smurf_format() [235] - error extracting: ex = 747109.0, id=747109.0, region = 1, prior=0.00155615884871
+2021-06-27 10:34:16,598 ERROR convert_to_smurf_format() [235] - error extracting: ex = 789477.0, id=789477.0, region = 1, prior=0.00132643998945
+2021-06-27 10:34:16,600 ERROR convert_to_smurf_format() [235] - error extracting: ex = 803925.0, id=803925.0, region = 1, prior=0.00161872301943
+2021-06-27 10:34:16,601 ERROR convert_to_smurf_format() [235] - error extracting: ex = 862527.0, id=862527.0, region = 1, prior=0.00228034727917
+2021-06-27 10:34:16,602 ERROR convert_to_smurf_format() [235] - error extracting: ex = 870706.0, id=870706.0, region = 1, prior=0.0023430585252
+2021-06-27 10:34:16,603 ERROR convert_to_smurf_format() [235] - error extracting: ex = 870036.0, id=870036.0, region = 1, prior=0.00235343074639
+2021-06-27 10:34:16,605 ERROR convert_to_smurf_format() [235] - error extracting: ex = 888405.0, id=888405.0, region = 1, prior=0.00155698078528
+2021-06-27 10:34:16,606 ERROR convert_to_smurf_format() [235] - error extracting: ex = 899953.0, id=899953.0, region = 1, prior=0.0022612980068
+2021-06-27 10:34:16,607 ERROR convert_to_smurf_format() [235] - error extracting: ex = 905950.0, id=905950.0, region = 1, prior=0.00124481953106
+2021-06-27 10:34:16,608 ERROR convert_to_smurf_format() [235] - error extracting: ex = 971526.0, id=971526.0, region = 1, prior=0.00222047669426
+2021-06-27 10:34:16,609 ERROR convert_to_smurf_format() [235] - error extracting: ex = 910253.0, id=910253.0, region = 1, prior=0.00159799639793
+2021-06-27 10:34:16,611 ERROR convert_to_smurf_format() [235] - error extracting: ex = 852963.0, id=852963.0, region = 1, prior=0.00239288362392
+2021-06-27 10:34:16,612 ERROR convert_to_smurf_format() [235] - error extracting: ex = 919419.0, id=919419.0, region = 1, prior=0.00229327765293
+2021-06-27 10:34:16,613 ERROR convert_to_smurf_format() [235] - error extracting: ex = 934824.0, id=934824.0, region = 1, prior=0.00239288362392
+2021-06-27 10:34:16,614 ERROR convert_to_smurf_format() [235] - error extracting: ex = 941256.0, id=941256.0, region = 1, prior=0.00229327765293
+2021-06-27 10:34:16,616 ERROR convert_to_smurf_format() [235] - error extracting: ex = 943712.0, id=943712.0, region = 1, prior=0.0022349092788
+2021-06-27 10:34:16,617 ERROR convert_to_smurf_format() [235] - error extracting: ex = 614310.0, id=614310.0, region = 1, prior=0.00230594383499
+2021-06-27 10:34:16,618 ERROR convert_to_smurf_format() [235] - error extracting: ex = 956468.0, id=956468.0, region = 1, prior=0.00121195758137
+2021-06-27 10:34:16,619 ERROR convert_to_smurf_format() [235] - error extracting: ex = 957802.0, id=957802.0, region = 1, prior=0.00229327765293
+2021-06-27 10:34:16,621 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1083944.0, id=1083944.0, region = 1, prior=0.00229356312085
+2021-06-27 10:34:16,622 ERROR convert_to_smurf_format() [235] - error extracting: ex = 998972.0, id=998972.0, region = 1, prior=0.0022425242544
+2021-06-27 10:34:16,623 ERROR convert_to_smurf_format() [235] - error extracting: ex = 984611.0, id=984611.0, region = 1, prior=0.00320088502032
+2021-06-27 10:34:16,625 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1037151.0, id=1037151.0, region = 1, prior=0.00224946556455
+2021-06-27 10:34:16,626 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1027929.0, id=1027929.0, region = 1, prior=0.00160129526011
+2021-06-27 10:34:16,627 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1037336.0, id=1037336.0, region = 1, prior=0.00239288362392
+2021-06-27 10:34:16,628 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1066772.0, id=1066772.0, region = 1, prior=0.00222265497176
+2021-06-27 10:34:16,630 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1048035.0, id=1048035.0, region = 1, prior=0.00160144451212
+2021-06-27 10:34:16,631 ERROR convert_to_smurf_format() [235] - error extracting: ex = 216256.0, id=216256.0, region = 1, prior=0.130544275493
+2021-06-27 10:34:16,632 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1053786.0, id=1053786.0, region = 1, prior=0.00155738628929
+2021-06-27 10:34:16,633 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1056886.0, id=1056886.0, region = 1, prior=0.00229327765293
+2021-06-27 10:34:16,635 ERROR convert_to_smurf_format() [235] - error extracting: ex = 987992.0, id=987992.0, region = 1, prior=0.00224683112983
+2021-06-27 10:34:16,636 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1082928.0, id=1082928.0, region = 1, prior=0.00225010334525
+2021-06-27 10:34:16,637 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1088941.0, id=1088941.0, region = 1, prior=0.00231735515469
+2021-06-27 10:34:16,640 ERROR convert_to_smurf_format() [235] - error extracting: ex = 2829987.0, id=2829987.0, region = 1, prior=0.0012662204355
+2021-06-27 10:34:16,642 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4298902.0, id=4298902.0, region = 1, prior=0.00121193305546
+2021-06-27 10:34:16,645 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4506593.0, id=4506593.0, region = 1, prior=0.00180894291475
+2021-06-27 10:34:16,646 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4194880.0, id=4194880.0, region = 1, prior=0.155986786493
+2021-06-27 10:34:16,647 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4510396.0, id=4510396.0, region = 1, prior=0.00134068255616
+2021-06-27 10:34:16,649 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4619345.0, id=4619345.0, region = 1, prior=0.0010108056262
+2021-06-27 10:34:27,726 ERROR convert_to_smurf_format() [235] - error extracting: ex = 188689.0, id=188689.0, region = 3, prior=0.00171147716778
+2021-06-27 10:34:27,728 ERROR convert_to_smurf_format() [235] - error extracting: ex = 577507.0, id=577507.0, region = 3, prior=0.199884099179
+2021-06-27 10:34:27,729 ERROR convert_to_smurf_format() [235] - error extracting: ex = 327433.0, id=327433.0, region = 3, prior=0.0010108056262
+2021-06-27 10:34:27,730 ERROR convert_to_smurf_format() [235] - error extracting: ex = 328595.0, id=328595.0, region = 3, prior=0.00127665265011
+2021-06-27 10:34:27,731 ERROR convert_to_smurf_format() [235] - error extracting: ex = 340621.0, id=340621.0, region = 3, prior=0.0010108056262
+2021-06-27 10:34:27,732 ERROR convert_to_smurf_format() [235] - error extracting: ex = 363827.0, id=363827.0, region = 3, prior=0.00161321301299
+2021-06-27 10:34:27,734 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4366827.0, id=4366827.0, region = 3, prior=0.182176090815
+2021-06-27 10:34:27,735 ERROR convert_to_smurf_format() [235] - error extracting: ex = 412883.0, id=412883.0, region = 3, prior=0.00163828376989
+2021-06-27 10:34:27,736 ERROR convert_to_smurf_format() [235] - error extracting: ex = 448122.0, id=448122.0, region = 3, prior=0.00119934441836
+2021-06-27 10:34:27,737 ERROR convert_to_smurf_format() [235] - error extracting: ex = 613763.0, id=613763.0, region = 3, prior=0.00162465023318
+2021-06-27 10:34:27,738 ERROR convert_to_smurf_format() [235] - error extracting: ex = 620237.0, id=620237.0, region = 3, prior=0.00119947674253
+2021-06-27 10:34:27,739 ERROR convert_to_smurf_format() [235] - error extracting: ex = 657930.0, id=657930.0, region = 3, prior=0.00162083493743
+2021-06-27 10:34:27,741 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4490358.0, id=4490358.0, region = 3, prior=0.00314171701602
+2021-06-27 10:34:27,742 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4509188.0, id=4509188.0, region = 3, prior=0.00162067291751
+2021-06-27 10:34:27,743 ERROR convert_to_smurf_format() [235] - error extracting: ex = 654759.0, id=654759.0, region = 3, prior=0.00162465023318
+2021-06-27 10:34:27,745 ERROR convert_to_smurf_format() [235] - error extracting: ex = 747109.0, id=747109.0, region = 3, prior=0.00155615884871
+2021-06-27 10:34:27,746 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4510275.0, id=4510275.0, region = 3, prior=0.000588877104274
+2021-06-27 10:34:27,747 ERROR convert_to_smurf_format() [235] - error extracting: ex = 803925.0, id=803925.0, region = 3, prior=0.00161872301943
+2021-06-27 10:34:27,748 ERROR convert_to_smurf_format() [235] - error extracting: ex = 815249.0, id=815249.0, region = 3, prior=0.0010108056262
+2021-06-27 10:34:27,749 ERROR convert_to_smurf_format() [235] - error extracting: ex = 849748.0, id=849748.0, region = 3, prior=0.00126350703275
+2021-06-27 10:34:27,751 ERROR convert_to_smurf_format() [235] - error extracting: ex = 862527.0, id=862527.0, region = 3, prior=0.00228034727917
+2021-06-27 10:34:27,752 ERROR convert_to_smurf_format() [235] - error extracting: ex = 870706.0, id=870706.0, region = 3, prior=0.0023430585252
+2021-06-27 10:34:27,753 ERROR convert_to_smurf_format() [235] - error extracting: ex = 870036.0, id=870036.0, region = 3, prior=0.00235343074639
+2021-06-27 10:34:27,755 ERROR convert_to_smurf_format() [235] - error extracting: ex = 899953.0, id=899953.0, region = 3, prior=0.0022612980068
+2021-06-27 10:34:27,756 ERROR convert_to_smurf_format() [235] - error extracting: ex = 905950.0, id=905950.0, region = 3, prior=0.00124481953106
+2021-06-27 10:34:27,757 ERROR convert_to_smurf_format() [235] - error extracting: ex = 971526.0, id=971526.0, region = 3, prior=0.00222047669426
+2021-06-27 10:34:27,758 ERROR convert_to_smurf_format() [235] - error extracting: ex = 910253.0, id=910253.0, region = 3, prior=0.00159799639793
+2021-06-27 10:34:27,760 ERROR convert_to_smurf_format() [235] - error extracting: ex = 852963.0, id=852963.0, region = 3, prior=0.00239288362392
+2021-06-27 10:34:27,761 ERROR convert_to_smurf_format() [235] - error extracting: ex = 919419.0, id=919419.0, region = 3, prior=0.00229327765293
+2021-06-27 10:34:27,762 ERROR convert_to_smurf_format() [235] - error extracting: ex = 934824.0, id=934824.0, region = 3, prior=0.00239288362392
+2021-06-27 10:34:27,763 ERROR convert_to_smurf_format() [235] - error extracting: ex = 941256.0, id=941256.0, region = 3, prior=0.00229327765293
+2021-06-27 10:34:27,765 ERROR convert_to_smurf_format() [235] - error extracting: ex = 943712.0, id=943712.0, region = 3, prior=0.0022349092788
+2021-06-27 10:34:27,766 ERROR convert_to_smurf_format() [235] - error extracting: ex = 614310.0, id=614310.0, region = 3, prior=0.00230594383499
+2021-06-27 10:34:27,768 ERROR convert_to_smurf_format() [235] - error extracting: ex = 957802.0, id=957802.0, region = 3, prior=0.00229327765293
+2021-06-27 10:34:27,769 ERROR convert_to_smurf_format() [235] - error extracting: ex = 960716.0, id=960716.0, region = 3, prior=0.00101258653058
+2021-06-27 10:34:27,770 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1083944.0, id=1083944.0, region = 3, prior=0.00229356312085
+2021-06-27 10:34:27,771 ERROR convert_to_smurf_format() [235] - error extracting: ex = 971785.0, id=971785.0, region = 3, prior=0.00123573495223
+2021-06-27 10:34:27,772 ERROR convert_to_smurf_format() [235] - error extracting: ex = 982022.0, id=982022.0, region = 3, prior=0.00159535465865
+2021-06-27 10:34:27,774 ERROR convert_to_smurf_format() [235] - error extracting: ex = 998972.0, id=998972.0, region = 3, prior=0.0022425242544
+2021-06-27 10:34:27,775 ERROR convert_to_smurf_format() [235] - error extracting: ex = 984611.0, id=984611.0, region = 3, prior=0.00320088502032
+2021-06-27 10:34:27,776 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1037151.0, id=1037151.0, region = 3, prior=0.00224946556455
+2021-06-27 10:34:27,778 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1037336.0, id=1037336.0, region = 3, prior=0.00239288362392
+2021-06-27 10:34:27,779 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1066772.0, id=1066772.0, region = 3, prior=0.00222265497176
+2021-06-27 10:34:27,780 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1045143.0, id=1045143.0, region = 3, prior=0.00123876258611
+2021-06-27 10:34:27,781 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1048035.0, id=1048035.0, region = 3, prior=0.00160144451212
+2021-06-27 10:34:27,783 ERROR convert_to_smurf_format() [235] - error extracting: ex = 216256.0, id=216256.0, region = 3, prior=0.130544275493
+2021-06-27 10:34:27,784 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1053786.0, id=1053786.0, region = 3, prior=0.00155738628929
+2021-06-27 10:34:27,785 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1056886.0, id=1056886.0, region = 3, prior=0.00229327765293
+2021-06-27 10:34:27,786 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1068278.0, id=1068278.0, region = 3, prior=0.0011993993311
+2021-06-27 10:34:27,787 ERROR convert_to_smurf_format() [235] - error extracting: ex = 987992.0, id=987992.0, region = 3, prior=0.00224683112983
+2021-06-27 10:34:27,789 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1082928.0, id=1082928.0, region = 3, prior=0.00225010334525
+2021-06-27 10:34:27,790 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1064470.0, id=1064470.0, region = 3, prior=0.00127668901302
+2021-06-27 10:34:27,791 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1088941.0, id=1088941.0, region = 3, prior=0.00231735515469
+2021-06-27 10:34:27,792 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1740276.0, id=1740276.0, region = 3, prior=0.162773766242
+2021-06-27 10:34:27,793 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1740516.0, id=1740516.0, region = 3, prior=0.00166578405153
+2021-06-27 10:34:27,795 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1958287.0, id=1958287.0, region = 3, prior=0.0010108056262
+2021-06-27 10:34:27,796 ERROR convert_to_smurf_format() [235] - error extracting: ex = 2018855.0, id=2018855.0, region = 3, prior=0.0010108056262
+2021-06-27 10:34:27,797 ERROR convert_to_smurf_format() [235] - error extracting: ex = 3192967.0, id=3192967.0, region = 3, prior=0.00166549133966
+2021-06-27 10:34:27,798 ERROR convert_to_smurf_format() [235] - error extracting: ex = 3403498.0, id=3403498.0, region = 3, prior=0.00171039477827
+2021-06-27 10:34:27,800 ERROR convert_to_smurf_format() [235] - error extracting: ex = 3493360.0, id=3493360.0, region = 3, prior=0.0151390829909
+2021-06-27 10:34:27,801 ERROR convert_to_smurf_format() [235] - error extracting: ex = 3674785.0, id=3674785.0, region = 3, prior=0.00171055352628
+2021-06-27 10:34:27,802 ERROR convert_to_smurf_format() [235] - error extracting: ex = 213652.0, id=213652.0, region = 3, prior=0.00166475060249
+2021-06-27 10:34:27,803 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4298902.0, id=4298902.0, region = 3, prior=0.00121193305546
+2021-06-27 10:34:27,804 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4382867.0, id=4382867.0, region = 3, prior=0.00166544621663
+2021-06-27 10:34:27,806 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4449968.0, id=4449968.0, region = 3, prior=0.00170879632251
+2021-06-27 10:34:27,807 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4457738.0, id=4457738.0, region = 3, prior=0.00171147716778
+2021-06-27 10:34:27,808 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4474235.0, id=4474235.0, region = 3, prior=0.00170852879991
+2021-06-27 10:34:27,809 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4506363.0, id=4506363.0, region = 3, prior=0.00127672218213
+2021-06-27 10:34:27,810 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4508906.0, id=4508906.0, region = 3, prior=0.0010108056262
+2021-06-27 10:34:27,811 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4508940.0, id=4508940.0, region = 3, prior=0.00119934613976
+2021-06-27 10:34:27,812 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4509244.0, id=4509244.0, region = 3, prior=0.00127711725135
+2021-06-27 10:34:27,813 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4506593.0, id=4506593.0, region = 3, prior=0.00180894291475
+2021-06-27 10:34:27,815 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4194880.0, id=4194880.0, region = 3, prior=0.155986786493
+2021-06-27 10:34:27,816 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4510287.0, id=4510287.0, region = 3, prior=0.00127652815098
+2021-06-27 10:34:27,817 ERROR convert_to_smurf_format() [235] - error extracting: ex = 952079.0, id=952079.0, region = 3, prior=0.00185539193105
+2021-06-27 10:34:27,819 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4510430.0, id=4510430.0, region = 3, prior=0.000457237808119
+2021-06-27 10:34:40,012 ERROR convert_to_smurf_format() [235] - error extracting: ex = 119340.0, id=119340.0, region = 2, prior=0.00126350703275
+2021-06-27 10:34:40,014 ERROR convert_to_smurf_format() [235] - error extracting: ex = 577507.0, id=577507.0, region = 2, prior=0.199884099179
+2021-06-27 10:34:40,016 ERROR convert_to_smurf_format() [235] - error extracting: ex = 317023.0, id=317023.0, region = 2, prior=0.00475405189645
+2021-06-27 10:34:40,018 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4366827.0, id=4366827.0, region = 2, prior=0.182176090815
+2021-06-27 10:34:40,019 ERROR convert_to_smurf_format() [235] - error extracting: ex = 412883.0, id=412883.0, region = 2, prior=0.00163828376989
+2021-06-27 10:34:40,020 ERROR convert_to_smurf_format() [235] - error extracting: ex = 448122.0, id=448122.0, region = 2, prior=0.00119934441836
+2021-06-27 10:34:40,022 ERROR convert_to_smurf_format() [235] - error extracting: ex = 681302.0, id=681302.0, region = 2, prior=0.00128127324018
+2021-06-27 10:34:40,023 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4490358.0, id=4490358.0, region = 2, prior=0.00314171701602
+2021-06-27 10:34:40,025 ERROR convert_to_smurf_format() [235] - error extracting: ex = 654759.0, id=654759.0, region = 2, prior=0.00162465023318
+2021-06-27 10:34:40,026 ERROR convert_to_smurf_format() [235] - error extracting: ex = 747109.0, id=747109.0, region = 2, prior=0.00155615884871
+2021-06-27 10:34:40,027 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4510275.0, id=4510275.0, region = 2, prior=0.000588877104274
+2021-06-27 10:34:40,028 ERROR convert_to_smurf_format() [235] - error extracting: ex = 789477.0, id=789477.0, region = 2, prior=0.00132643998945
+2021-06-27 10:34:40,030 ERROR convert_to_smurf_format() [235] - error extracting: ex = 862527.0, id=862527.0, region = 2, prior=0.00228034727917
+2021-06-27 10:34:40,031 ERROR convert_to_smurf_format() [235] - error extracting: ex = 870706.0, id=870706.0, region = 2, prior=0.0023430585252
+2021-06-27 10:34:40,033 ERROR convert_to_smurf_format() [235] - error extracting: ex = 870036.0, id=870036.0, region = 2, prior=0.00235343074639
+2021-06-27 10:34:40,034 ERROR convert_to_smurf_format() [235] - error extracting: ex = 888405.0, id=888405.0, region = 2, prior=0.00155698078528
+2021-06-27 10:34:40,035 ERROR convert_to_smurf_format() [235] - error extracting: ex = 899953.0, id=899953.0, region = 2, prior=0.0022612980068
+2021-06-27 10:34:40,037 ERROR convert_to_smurf_format() [235] - error extracting: ex = 971526.0, id=971526.0, region = 2, prior=0.00222047669426
+2021-06-27 10:34:40,038 ERROR convert_to_smurf_format() [235] - error extracting: ex = 910253.0, id=910253.0, region = 2, prior=0.00159799639793
+2021-06-27 10:34:40,039 ERROR convert_to_smurf_format() [235] - error extracting: ex = 852963.0, id=852963.0, region = 2, prior=0.00239288362392
+2021-06-27 10:34:40,041 ERROR convert_to_smurf_format() [235] - error extracting: ex = 919419.0, id=919419.0, region = 2, prior=0.00229327765293
+2021-06-27 10:34:40,042 ERROR convert_to_smurf_format() [235] - error extracting: ex = 934824.0, id=934824.0, region = 2, prior=0.00239288362392
+2021-06-27 10:34:40,043 ERROR convert_to_smurf_format() [235] - error extracting: ex = 941256.0, id=941256.0, region = 2, prior=0.00229327765293
+2021-06-27 10:34:40,044 ERROR convert_to_smurf_format() [235] - error extracting: ex = 943712.0, id=943712.0, region = 2, prior=0.0022349092788
+2021-06-27 10:34:40,046 ERROR convert_to_smurf_format() [235] - error extracting: ex = 614310.0, id=614310.0, region = 2, prior=0.00230594383499
+2021-06-27 10:34:40,047 ERROR convert_to_smurf_format() [235] - error extracting: ex = 956468.0, id=956468.0, region = 2, prior=0.00121195758137
+2021-06-27 10:34:40,048 ERROR convert_to_smurf_format() [235] - error extracting: ex = 957802.0, id=957802.0, region = 2, prior=0.00229327765293
+2021-06-27 10:34:40,050 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1083944.0, id=1083944.0, region = 2, prior=0.00229356312085
+2021-06-27 10:34:40,051 ERROR convert_to_smurf_format() [235] - error extracting: ex = 982022.0, id=982022.0, region = 2, prior=0.00159535465865
+2021-06-27 10:34:40,052 ERROR convert_to_smurf_format() [235] - error extracting: ex = 998972.0, id=998972.0, region = 2, prior=0.0022425242544
+2021-06-27 10:34:40,054 ERROR convert_to_smurf_format() [235] - error extracting: ex = 984611.0, id=984611.0, region = 2, prior=0.00320088502032
+2021-06-27 10:34:40,055 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1037151.0, id=1037151.0, region = 2, prior=0.00224946556455
+2021-06-27 10:34:40,056 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1027929.0, id=1027929.0, region = 2, prior=0.00160129526011
+2021-06-27 10:34:40,058 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1037336.0, id=1037336.0, region = 2, prior=0.00239288362392
+2021-06-27 10:34:40,059 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1066772.0, id=1066772.0, region = 2, prior=0.00222265497176
+2021-06-27 10:34:40,061 ERROR convert_to_smurf_format() [235] - error extracting: ex = 216256.0, id=216256.0, region = 2, prior=0.130544275493
+2021-06-27 10:34:40,062 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1056886.0, id=1056886.0, region = 2, prior=0.00229327765293
+2021-06-27 10:34:40,064 ERROR convert_to_smurf_format() [235] - error extracting: ex = 987992.0, id=987992.0, region = 2, prior=0.00224683112983
+2021-06-27 10:34:40,065 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1082928.0, id=1082928.0, region = 2, prior=0.00225010334525
+2021-06-27 10:34:40,067 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1088941.0, id=1088941.0, region = 2, prior=0.00231735515469
+2021-06-27 10:34:40,068 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1740276.0, id=1740276.0, region = 2, prior=0.162773766242
+2021-06-27 10:34:40,070 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1899976.0, id=1899976.0, region = 2, prior=0.00162693611854
+2021-06-27 10:34:40,071 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1932909.0, id=1932909.0, region = 2, prior=0.00126350703275
+2021-06-27 10:34:40,072 ERROR convert_to_smurf_format() [235] - error extracting: ex = 2756008.0, id=2756008.0, region = 2, prior=0.00126350703275
+2021-06-27 10:34:40,073 ERROR convert_to_smurf_format() [235] - error extracting: ex = 2856225.0, id=2856225.0, region = 2, prior=0.00162684955985
+2021-06-27 10:34:40,075 ERROR convert_to_smurf_format() [235] - error extracting: ex = 3403498.0, id=3403498.0, region = 2, prior=0.00171039477827
+2021-06-27 10:34:40,076 ERROR convert_to_smurf_format() [235] - error extracting: ex = 3493360.0, id=3493360.0, region = 2, prior=0.0151390829909
+2021-06-27 10:34:40,077 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4351538.0, id=4351538.0, region = 2, prior=0.00162693387833
+2021-06-27 10:34:40,079 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4357948.0, id=4357948.0, region = 2, prior=0.00126350703275
+2021-06-27 10:34:40,080 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4418448.0, id=4418448.0, region = 2, prior=0.00126350703275
+2021-06-27 10:34:40,081 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4424503.0, id=4424503.0, region = 2, prior=0.00126350703275
+2021-06-27 10:34:40,082 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4464344.0, id=4464344.0, region = 2, prior=0.00126350703275
+2021-06-27 10:34:40,084 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4508940.0, id=4508940.0, region = 2, prior=0.00119934613976
+2021-06-27 10:34:40,085 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4194880.0, id=4194880.0, region = 2, prior=0.155986786493
+2021-06-27 10:34:40,087 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4510396.0, id=4510396.0, region = 2, prior=0.00134068255616
+2021-06-27 10:34:40,088 ERROR convert_to_smurf_format() [235] - error extracting: ex = 952079.0, id=952079.0, region = 2, prior=0.00185539193105
+2021-06-27 10:34:40,089 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4510430.0, id=4510430.0, region = 2, prior=0.000457237808119
+2021-06-27 10:34:50,805 ERROR convert_to_smurf_format() [235] - error extracting: ex = 188689.0, id=188689.0, region = 5, prior=0.00171147716778
+2021-06-27 10:34:50,807 ERROR convert_to_smurf_format() [235] - error extracting: ex = 577507.0, id=577507.0, region = 5, prior=0.199884099179
+2021-06-27 10:34:50,808 ERROR convert_to_smurf_format() [235] - error extracting: ex = 317023.0, id=317023.0, region = 5, prior=0.00475405189645
+2021-06-27 10:34:50,810 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4366827.0, id=4366827.0, region = 5, prior=0.182176090815
+2021-06-27 10:34:50,813 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4509188.0, id=4509188.0, region = 5, prior=0.00162067291751
+2021-06-27 10:34:50,816 ERROR convert_to_smurf_format() [235] - error extracting: ex = 856128.0, id=856128.0, region = 5, prior=0.0010108056262
+2021-06-27 10:34:50,817 ERROR convert_to_smurf_format() [235] - error extracting: ex = 862527.0, id=862527.0, region = 5, prior=0.00228034727917
+2021-06-27 10:34:50,818 ERROR convert_to_smurf_format() [235] - error extracting: ex = 870706.0, id=870706.0, region = 5, prior=0.0023430585252
+2021-06-27 10:34:50,820 ERROR convert_to_smurf_format() [235] - error extracting: ex = 870036.0, id=870036.0, region = 5, prior=0.00235343074639
+2021-06-27 10:34:50,821 ERROR convert_to_smurf_format() [235] - error extracting: ex = 888405.0, id=888405.0, region = 5, prior=0.00155698078528
+2021-06-27 10:34:50,822 ERROR convert_to_smurf_format() [235] - error extracting: ex = 899953.0, id=899953.0, region = 5, prior=0.0022612980068
+2021-06-27 10:34:50,823 ERROR convert_to_smurf_format() [235] - error extracting: ex = 971526.0, id=971526.0, region = 5, prior=0.00222047669426
+2021-06-27 10:34:50,825 ERROR convert_to_smurf_format() [235] - error extracting: ex = 852963.0, id=852963.0, region = 5, prior=0.00239288362392
+2021-06-27 10:34:50,826 ERROR convert_to_smurf_format() [235] - error extracting: ex = 919419.0, id=919419.0, region = 5, prior=0.00229327765293
+2021-06-27 10:34:50,827 ERROR convert_to_smurf_format() [235] - error extracting: ex = 934824.0, id=934824.0, region = 5, prior=0.00239288362392
+2021-06-27 10:34:50,829 ERROR convert_to_smurf_format() [235] - error extracting: ex = 941256.0, id=941256.0, region = 5, prior=0.00229327765293
+2021-06-27 10:34:50,830 ERROR convert_to_smurf_format() [235] - error extracting: ex = 943712.0, id=943712.0, region = 5, prior=0.0022349092788
+2021-06-27 10:34:50,831 ERROR convert_to_smurf_format() [235] - error extracting: ex = 614310.0, id=614310.0, region = 5, prior=0.00230594383499
+2021-06-27 10:34:50,833 ERROR convert_to_smurf_format() [235] - error extracting: ex = 957802.0, id=957802.0, region = 5, prior=0.00229327765293
+2021-06-27 10:34:50,834 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1083944.0, id=1083944.0, region = 5, prior=0.00229356312085
+2021-06-27 10:34:50,835 ERROR convert_to_smurf_format() [235] - error extracting: ex = 971785.0, id=971785.0, region = 5, prior=0.00123573495223
+2021-06-27 10:34:50,837 ERROR convert_to_smurf_format() [235] - error extracting: ex = 982022.0, id=982022.0, region = 5, prior=0.00159535465865
+2021-06-27 10:34:50,838 ERROR convert_to_smurf_format() [235] - error extracting: ex = 998972.0, id=998972.0, region = 5, prior=0.0022425242544
+2021-06-27 10:34:50,839 ERROR convert_to_smurf_format() [235] - error extracting: ex = 984611.0, id=984611.0, region = 5, prior=0.00320088502032
+2021-06-27 10:34:50,840 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1037151.0, id=1037151.0, region = 5, prior=0.00224946556455
+2021-06-27 10:34:50,842 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1027929.0, id=1027929.0, region = 5, prior=0.00160129526011
+2021-06-27 10:34:50,843 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1037336.0, id=1037336.0, region = 5, prior=0.00239288362392
+2021-06-27 10:34:50,844 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1066772.0, id=1066772.0, region = 5, prior=0.00222265497176
+2021-06-27 10:34:50,845 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1045143.0, id=1045143.0, region = 5, prior=0.00123876258611
+2021-06-27 10:34:50,846 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1048035.0, id=1048035.0, region = 5, prior=0.00160144451212
+2021-06-27 10:34:50,848 ERROR convert_to_smurf_format() [235] - error extracting: ex = 216256.0, id=216256.0, region = 5, prior=0.130544275493
+2021-06-27 10:34:50,849 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1053786.0, id=1053786.0, region = 5, prior=0.00155738628929
+2021-06-27 10:34:50,850 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1056886.0, id=1056886.0, region = 5, prior=0.00229327765293
+2021-06-27 10:34:50,852 ERROR convert_to_smurf_format() [235] - error extracting: ex = 987992.0, id=987992.0, region = 5, prior=0.00224683112983
+2021-06-27 10:34:50,853 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1082928.0, id=1082928.0, region = 5, prior=0.00225010334525
+2021-06-27 10:34:50,855 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1088941.0, id=1088941.0, region = 5, prior=0.00231735515469
+2021-06-27 10:34:50,856 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1740276.0, id=1740276.0, region = 5, prior=0.162773766242
+2021-06-27 10:34:50,857 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1740516.0, id=1740516.0, region = 5, prior=0.00166578405153
+2021-06-27 10:34:50,858 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1899976.0, id=1899976.0, region = 5, prior=0.00162693611854
+2021-06-27 10:34:50,859 ERROR convert_to_smurf_format() [235] - error extracting: ex = 2829987.0, id=2829987.0, region = 5, prior=0.0012662204355
+2021-06-27 10:34:50,860 ERROR convert_to_smurf_format() [235] - error extracting: ex = 2667443.0, id=2667443.0, region = 5, prior=0.00126350703275
+2021-06-27 10:34:50,862 ERROR convert_to_smurf_format() [235] - error extracting: ex = 2856225.0, id=2856225.0, region = 5, prior=0.00162684955985
+2021-06-27 10:34:50,863 ERROR convert_to_smurf_format() [235] - error extracting: ex = 3192967.0, id=3192967.0, region = 5, prior=0.00166549133966
+2021-06-27 10:34:50,864 ERROR convert_to_smurf_format() [235] - error extracting: ex = 3493360.0, id=3493360.0, region = 5, prior=0.0151390829909
+2021-06-27 10:34:50,865 ERROR convert_to_smurf_format() [235] - error extracting: ex = 3674785.0, id=3674785.0, region = 5, prior=0.00171055352628
+2021-06-27 10:34:50,867 ERROR convert_to_smurf_format() [235] - error extracting: ex = 213652.0, id=213652.0, region = 5, prior=0.00166475060249
+2021-06-27 10:34:50,868 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4351538.0, id=4351538.0, region = 5, prior=0.00162693387833
+2021-06-27 10:34:50,869 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4382867.0, id=4382867.0, region = 5, prior=0.00166544621663
+2021-06-27 10:34:50,871 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4449968.0, id=4449968.0, region = 5, prior=0.00170879632251
+2021-06-27 10:34:50,872 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4457738.0, id=4457738.0, region = 5, prior=0.00171147716778
+2021-06-27 10:34:50,873 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4474235.0, id=4474235.0, region = 5, prior=0.00170852879991
+2021-06-27 10:34:50,875 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4194880.0, id=4194880.0, region = 5, prior=0.155986786493
+2021-06-27 10:35:00,633 ERROR convert_to_smurf_format() [235] - error extracting: ex = 577507.0, id=577507.0, region = 4, prior=0.199884099179
+2021-06-27 10:35:00,636 ERROR convert_to_smurf_format() [235] - error extracting: ex = 317023.0, id=317023.0, region = 4, prior=0.00475405189645
+2021-06-27 10:35:00,637 ERROR convert_to_smurf_format() [235] - error extracting: ex = 328595.0, id=328595.0, region = 4, prior=0.00127665265011
+2021-06-27 10:35:00,639 ERROR convert_to_smurf_format() [235] - error extracting: ex = 363827.0, id=363827.0, region = 4, prior=0.00161321301299
+2021-06-27 10:35:00,641 ERROR convert_to_smurf_format() [235] - error extracting: ex = 613763.0, id=613763.0, region = 4, prior=0.00162465023318
+2021-06-27 10:35:00,642 ERROR convert_to_smurf_format() [235] - error extracting: ex = 657930.0, id=657930.0, region = 4, prior=0.00162083493743
+2021-06-27 10:35:00,644 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4490358.0, id=4490358.0, region = 4, prior=0.00314171701602
+2021-06-27 10:35:00,645 ERROR convert_to_smurf_format() [235] - error extracting: ex = 739827.0, id=739827.0, region = 4, prior=0.0010108056262
+2021-06-27 10:35:00,646 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4509188.0, id=4509188.0, region = 4, prior=0.00162067291751
+2021-06-27 10:35:00,648 ERROR convert_to_smurf_format() [235] - error extracting: ex = 654759.0, id=654759.0, region = 4, prior=0.00162465023318
+2021-06-27 10:35:00,649 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4510275.0, id=4510275.0, region = 4, prior=0.000588877104274
+2021-06-27 10:35:00,651 ERROR convert_to_smurf_format() [235] - error extracting: ex = 789477.0, id=789477.0, region = 4, prior=0.00132643998945
+2021-06-27 10:35:00,652 ERROR convert_to_smurf_format() [235] - error extracting: ex = 803925.0, id=803925.0, region = 4, prior=0.00161872301943
+2021-06-27 10:35:00,663 ERROR convert_to_smurf_format() [235] - error extracting: ex = 216256.0, id=216256.0, region = 4, prior=0.130544275493
+2021-06-27 10:35:00,664 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1068278.0, id=1068278.0, region = 4, prior=0.0011993993311
+2021-06-27 10:35:00,667 ERROR convert_to_smurf_format() [235] - error extracting: ex = 1064470.0, id=1064470.0, region = 4, prior=0.00127668901302
+2021-06-27 10:35:00,671 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4304796.0, id=4304796.0, region = 4, prior=0.00126350703275
+2021-06-27 10:35:00,673 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4506363.0, id=4506363.0, region = 4, prior=0.00127672218213
+2021-06-27 10:35:00,675 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4509244.0, id=4509244.0, region = 4, prior=0.00127711725135
+2021-06-27 10:35:00,676 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4506593.0, id=4506593.0, region = 4, prior=0.00180894291475
+2021-06-27 10:35:00,677 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4194880.0, id=4194880.0, region = 4, prior=0.155986786493
+2021-06-27 10:35:00,679 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4510287.0, id=4510287.0, region = 4, prior=0.00127652815098
+2021-06-27 10:35:00,680 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4510396.0, id=4510396.0, region = 4, prior=0.00134068255616
+2021-06-27 10:35:00,681 ERROR convert_to_smurf_format() [235] - error extracting: ex = 952079.0, id=952079.0, region = 4, prior=0.00185539193105
+2021-06-27 10:35:00,682 ERROR convert_to_smurf_format() [235] - error extracting: ex = 4510430.0, id=4510430.0, region = 4, prior=0.000457237808119
+2021-06-27 10:36:50,170 INFO execute() [140] - Running taxonomy command: /home/veredhi/smurf2_github/smurf2_code/taxonomy/run_main_taxonomy_single_SMURF2.sh /opt/apps/matlab/Runtime/v97/ /home/veredhi/smurf2_github/tmp_res/ /home/veredhi/smurf2_github/smurf2_code/taxonomy/name_calls_ravid_split_genus_split_species.mat
+2021-06-27 10:38:40,205 INFO execute() [142] - Done running taxonomy command: /home/veredhi/smurf2_github/smurf2_code/taxonomy/run_main_taxonomy_single_SMURF2.sh /opt/apps/matlab/Runtime/v97/ /home/veredhi/smurf2_github/tmp_res/ /home/veredhi/smurf2_github/smurf2_code/taxonomy/name_calls_ravid_split_genus_split_species.mat
+2021-06-27 10:38:40,619 INFO timed() [15] - Done execute: 10.79 minutes
+
